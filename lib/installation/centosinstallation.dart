@@ -17,7 +17,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
     var size = MediaQuery.of(context).size;
     //var height = size.height;
     var width = size.width;
-    Future<void> _launchInBrowser(Uri url) async {
+    Future<void> centos(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+    Future<void> virtualbox(Uri url) async {
       if (!await launchUrl(
         url,
         mode: LaunchMode.externalApplication,
@@ -26,7 +34,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
       }
     }
 
-    final Uri toLaunch = Uri(scheme: 'https', host: 'www.centos.org');
+    final Uri centoswebsite = Uri(scheme: 'https', host: 'www.centos.org');
+    final Uri virtualboxwebsite = Uri(scheme: 'https', host: 'www.virtualbox.org');
+
 
     return SafeArea(
       child: Scaffold(
@@ -74,16 +84,24 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
-                text:  TextSpan(children: [
+                text: TextSpan(children: [
               TextSpan(
-                text: 'CentOS',
-                style: const TextStyle(color: Colors.blue),
-                recognizer:  TapGestureRecognizer()..onTap = () => {
-                 setState(() {
-                    _launchInBrowser(toLaunch);
-                  }),
-                }
-              ),
+                  text: 'CentOS',
+                  style: const TextStyle(color: Colors.blue,fontSize: 15,
+                    fontWeight: FontWeight.w400,),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () => {
+                          setState(() {
+                            centos(centoswebsite);
+                          }),
+                        }),
+              const TextSpan(
+                  text: '\t is a Linux distribution that provides a free and open-source '
+                      'community-supported computing platform,'
+                      ' functionally compatible with its upstream source, Red Hat Enterprise Linux.',
+                  style: TextStyle(color: Colors.black,fontSize: 15,
+                    fontWeight: FontWeight.w400,),
+                 ),
             ])),
             const SizedBox(
               height: 10.0,
@@ -105,12 +123,42 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
-            const Text(
-              '\u27A4\t Virtual Box on the System.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
+            const SizedBox(
+              height: 5.0,
+            ),
+            // const Text(
+            //   '\u27A4\t Virtual Box on the System.',
+            //   style: TextStyle(
+            //       fontSize: 15,
+            //       fontWeight: FontWeight.w400,
+            //       color: Colors.black),
+            // ),
+            RichText(
+                text: TextSpan(children: [
+                 const TextSpan(
+                    text: '\u27A4\t',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                  TextSpan(
+                      text: 'Virtual Box',
+                      style: const TextStyle(color: Colors.blue,fontSize: 15,
+                        fontWeight: FontWeight.w400,),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => {
+                          setState(() {
+                            virtualbox(virtualboxwebsite);
+                          }),
+                        }),
+                  const TextSpan(
+                    text: '\ton the System.',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                ])),
+
+            const SizedBox(
+              height: 5.0,
             ),
             const Text(
               '\u27A4\t CentOS ISO File.',
@@ -119,12 +167,18 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
+            const SizedBox(
+              height: 5.0,
+            ),
             const Text(
               '\u27A4\t A minimum of 4 GB RAM is recommended.',
               style: TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
             ),
             const Text(
               '\u27A4\t One core or thread for each virtualized CPU and one for the host.',
@@ -134,7 +188,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   color: Colors.black),
             ),
             const SizedBox(
-              height: 10.0,
+              height: 5.0,
             ),
             const Text(
               'Step 1 :- Download CentOS Linux ISO',
