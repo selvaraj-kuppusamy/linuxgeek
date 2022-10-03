@@ -1,5 +1,6 @@
-
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Centosinstallation extends StatefulWidget {
   const Centosinstallation({Key? key}) : super(key: key);
@@ -12,11 +13,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
   @override
   Widget build(BuildContext context) {
     var orientation = MediaQuery.of(context).orientation;
-
     //size of the window
     var size = MediaQuery.of(context).size;
     //var height = size.height;
     var width = size.width;
+    Future<void> _launchInBrowser(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+
+    final Uri toLaunch = Uri(scheme: 'https', host: 'www.centos.org');
 
     return SafeArea(
       child: Scaffold(
@@ -39,15 +49,17 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w900,
                   color: Colors.black),
             ),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centos.png',
-              height: 150.0,
-              width: 270.0,
-            ): Image.asset(
-              'assets/installation/centos.png',
-              height: 150.0,
-              width: width,),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centos.png',
+                    height: 150.0,
+                    width: 270.0,
+                  )
+                : Image.asset(
+                    'assets/installation/centos.png',
+                    height: 150.0,
+                    width: width,
+                  ),
             const SizedBox(
               height: 10.0,
             ),
@@ -61,15 +73,18 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text(
-              'CentOS is a Linux distribution that provides a free and open-source '
-              'community-supported computing platform, '
-              'functionally compatible with its upstream source, Red Hat Enterprise Linux.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
-            ),
+            RichText(
+                text:  TextSpan(children: [
+              TextSpan(
+                text: 'CentOS',
+                style: const TextStyle(color: Colors.blue),
+                recognizer:  TapGestureRecognizer()..onTap = () => {
+                 setState(() {
+                    _launchInBrowser(toLaunch);
+                  }),
+                }
+              ),
+            ])),
             const SizedBox(
               height: 10.0,
             ),
@@ -145,19 +160,17 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-
-
-             orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/0.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/0.png',
-              height: 500,
-              width: width,),
-
-
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/0.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/0.png',
+                    height: 500,
+                    width: width,
+                  ),
             const SizedBox(
               height: 10.0,
             ),
@@ -168,309 +181,423 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             ),
-
-
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/2.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/2.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/3.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/3.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/4.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/4.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/5.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/5.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/6.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/6.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/7.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/7.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/8.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/8.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/9.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/9.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/10.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/10.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/11.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/11.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/12.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/12.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/13.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/13.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/14.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/14.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/15.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/15.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/16.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/16.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/17.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/17.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/18.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/18.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/19.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/19.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/20.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/20.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/21.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/21.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/22.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/22.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/23.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/23.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/24.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/24.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/25.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/25.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/26.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/26.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/27.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/27.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/28.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/28.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/29.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/29.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/30.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/30.png',
-              height: 500.0,
-              width: width,),
-            const SizedBox(height: 10.0,),
-            orientation == Orientation.portrait?
-            Image.asset(
-              'assets/installation/centosinstallation/31.png',
-              height: 250.0,
-              width: width,
-            ): Image.asset(
-              'assets/installation/centosinstallation/31.png',
-              height: 500.0,
-              width: width,),
-
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/2.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/2.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/3.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/3.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/4.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/4.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/5.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/5.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/6.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/6.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/7.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/7.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/8.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/8.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/9.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/9.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/10.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/10.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/11.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/11.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/12.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/12.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/13.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/13.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/14.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/14.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/15.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/15.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/16.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/16.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/17.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/17.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/18.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/18.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/19.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/19.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/20.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/20.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/21.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/21.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/22.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/22.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/23.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/23.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/24.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/24.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/25.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/25.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/26.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/26.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/27.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/27.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/28.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/28.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/29.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/29.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/30.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/30.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/31.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/31.png',
+                    height: 500.0,
+                    width: width,
+                  ),
           ],
         ),
       ),
