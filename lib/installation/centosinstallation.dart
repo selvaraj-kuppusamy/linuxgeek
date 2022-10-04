@@ -2231,7 +2231,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             const Text(
               'Once again, Overview all things.',
               style: TextStyle(
@@ -2239,7 +2241,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -2348,7 +2352,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
-                  text: 'At this point, it is safe to remove your installation media, or in this case,\t',
+                  text:
+                      'At this point, it is safe to remove your installation media, or in this case,\t',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
@@ -2364,7 +2369,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   ),
                 ),
                 TextSpan(
-                  text: '\t the ISO image file. During the reboot process, select the first entry and hit\t',
+                  text:
+                      '\t the ISO image file. During the reboot process, select the first entry and hit\t',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
@@ -2444,7 +2450,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -2498,7 +2506,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w400,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -2686,7 +2696,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w500,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -2731,7 +2743,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
               ]),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             const Text(
               'yum update',
               style: TextStyle(
@@ -2756,6 +2770,53 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Check,\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'CentOS Linux',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\tdetails  using\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'neofetch',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: 'command(Optional).',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/31.png',
@@ -2767,6 +2828,37 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Finally,\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'CentOS Linux',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\thas successfully installed.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
           ],
         ),
       ),
