@@ -406,7 +406,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
                 ' Install CentOS Linux is booted and testing the process.'
-                    ' After, the window below will prompt you to select the installation language.',
+                ' After, the window below will prompt you to select the installation language.',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 15,
@@ -446,62 +446,65 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Now, you should select your preferred language. I’m using',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-
-                  TextSpan(
-                    text: '\tEnglish',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '.',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ])),
-              const SizedBox(height: 5.0,),
+              TextSpan(
+                text:
+                    'Now, you should select your preferred language. I’m using',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tEnglish',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Click ',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'Continue',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-
-                  TextSpan(
-                    text: '.',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              TextSpan(
+                text: 'Click ',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Continue',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
 
             orientation == Orientation.portrait
                 ? Image.asset(
@@ -519,33 +522,31 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Now, should setup the\t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'Installation summary',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-
-                  TextSpan(
-                    text: '.',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ])),
-
+              TextSpan(
+                text: 'Now, should setup the\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Installation summary',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
 
             const SizedBox(
               height: 10.0,
@@ -571,7 +572,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             ),
-            const SizedBox(height: 5.0,),
+            const SizedBox(
+              height: 5.0,
+            ),
             const Text(
               'Keyboard',
               style: TextStyle(
@@ -585,116 +588,109 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Now, should add your preferable\t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'keyboard layout',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-
-                  TextSpan(
-                    text: '.',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                ])),
+              TextSpan(
+                text: 'Now, should add your preferable\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'keyboard layout',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Click \t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '[ + ]',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-
-                  TextSpan(
-                    text: '\tsymbol to add\t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'keyboard layout',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '\tand\t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '[ - ]',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '\t symbol to remove\t',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'keyboard layout',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  TextSpan(
-                    text: '.',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 15,
-                      fontWeight: FontWeight.w400,
-                    ),
-                  ),
-                  
-
-                ])),
-
-
-
+              TextSpan(
+                text: 'Click \t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '[ + ]',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\tsymbol to add\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'keyboard layout',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\tand\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '[ - ]',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\t symbol to remove\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'keyboard layout',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
 
             const SizedBox(
               height: 10.0,
@@ -710,6 +706,67 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'In my case, I choose\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'English (India, with rupee)',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Add',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
             const SizedBox(
               height: 10.0,
             ),
@@ -727,6 +784,83 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'I selected my',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tkeyboard layout\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: 'and also overview the',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tkeyboard layout',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Done',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/9.png',
@@ -738,6 +872,92 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Language Support',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Now, should select your preferable\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'language support',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.\tIn my case, I was select additionally\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'English(India)',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Done',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
             const SizedBox(
               height: 10.0,
             ),
