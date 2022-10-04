@@ -832,7 +832,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children:[
+                text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -932,7 +932,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children:[
+                text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -997,8 +997,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan
-                  (children:[
+                text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -1347,7 +1346,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children:[
+                text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -1387,6 +1386,9 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
             const SizedBox(
               height: 10.0,
             ),
