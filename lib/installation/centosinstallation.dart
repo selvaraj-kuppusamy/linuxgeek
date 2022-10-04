@@ -2072,6 +2072,141 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text(
+              'Root password',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              'In the User Creation, you can set up your user account.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Enter your name.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Enter your user name.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Pick your username.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Pick your password and confirm password.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Also your preference to choose\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Make this user administrator',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\tand\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Require a password to use this account',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Press\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
             const SizedBox(
               height: 10.0,
             ),
