@@ -1792,14 +1792,6 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
-                  text: '.',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-                TextSpan(
                   text: 'Click\t',
                   style: TextStyle(
                     color: Colors.black,
