@@ -25,6 +25,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
         throw 'Could not launch $url';
       }
     }
+
     Future<void> virtualbox(Uri url) async {
       if (!await launchUrl(
         url,
@@ -35,8 +36,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
     }
 
     final Uri centoswebsite = Uri(scheme: 'https', host: 'www.centos.org');
-    final Uri virtualboxwebsite = Uri(scheme: 'https', host: 'www.virtualbox.org');
-
+    final Uri virtualboxwebsite =
+        Uri(scheme: 'https', host: 'www.virtualbox.org');
 
     return SafeArea(
       child: Scaffold(
@@ -87,8 +88,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: TextSpan(children: [
               TextSpan(
                   text: 'CentOS',
-                  style: const TextStyle(color: Colors.blue,fontSize: 15,
-                    fontWeight: FontWeight.w400,),
+                  style: const TextStyle(
+                    color: Colors.blue,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => {
                           setState(() {
@@ -96,12 +100,16 @@ class _CentosinstallationState extends State<Centosinstallation> {
                           }),
                         }),
               const TextSpan(
-                  text: '\t is a Linux distribution that provides a free and open-source '
-                      'community-supported computing platform,'
-                      ' functionally compatible with its upstream source, Red Hat Enterprise Linux.',
-                  style: TextStyle(color: Colors.black,fontSize: 15,
-                    fontWeight: FontWeight.w400,),
-                 ),
+                text:
+                    '\t is a Linux distribution that provides a free and open-source '
+                    'community-supported computing platform,'
+                    ' functionally compatible with its upstream source, Red Hat Enterprise Linux.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
             ])),
             const SizedBox(
               height: 10.0,
@@ -135,27 +143,36 @@ class _CentosinstallationState extends State<Centosinstallation> {
             // ),
             RichText(
                 text: TextSpan(children: [
-                 const TextSpan(
-                    text: '\u27A4\t',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
+              const TextSpan(
+                text: '\u27A4\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                  text: 'Virtual Box',
+                  style: const TextStyle(
+                    color: Colors.blue,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
                   ),
-                  TextSpan(
-                      text: 'Virtual Box',
-                      style: const TextStyle(color: Colors.blue,fontSize: 15,
-                        fontWeight: FontWeight.w400,),
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () => {
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () => {
                           setState(() {
                             virtualbox(virtualboxwebsite);
                           }),
                         }),
-                  const TextSpan(
-                    text: '\ton the System.',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                ])),
+              const TextSpan(
+                text: '\ton the System.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
 
             const SizedBox(
               height: 5.0,
@@ -213,33 +230,48 @@ class _CentosinstallationState extends State<Centosinstallation> {
             // ),
             RichText(
                 text: TextSpan(children: [
-                  const TextSpan(
-                    text: 'Proceed to\t',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
+              const TextSpan(
+                text: 'Proceed to\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                  text: 'CentOS official site',
+                  style: const TextStyle(
+                    color: Colors.blue,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
                   ),
-                  TextSpan(
-                      text: 'CentOS official site',
-                      style: const TextStyle(color: Colors.blue,fontSize: 15,
-                        fontWeight: FontWeight.w400,),
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () => {
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () => {
                           setState(() {
                             centos(centoswebsite);
                           }),
                         }),
-                  const TextSpan(
-                    text: '.\tthen go to downloads. Thereafter, '
-                        'download the CentOS Linux ISO file for free. There are several'
-                        ' CentOS Linux versions are there. Choose CentOS Linux versions based on '
-                        'your system configuration.',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
-            const Text('Approximate, CentOS ISO file size is 9GB to download.', style: TextStyle(color: Colors.black,fontSize: 15,
-              fontWeight: FontWeight.w400,)),
+              const TextSpan(
+                text: '.\tthen go to downloads. Thereafter, '
+                    'download the CentOS Linux ISO file for free. There are several'
+                    ' CentOS Linux versions are there. Choose CentOS Linux versions based on '
+                    'your system configuration.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Approximate, CentOS ISO file size is 9GB to download.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                )),
 
             const SizedBox(
               height: 10.0,
@@ -265,110 +297,212 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
             ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Connect the',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tUSB flash\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: 'drive to a PC. Turn on the PC and press the key'
+                    ' that opens the boot-device selection menu for the computer such as the,',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tEsc/F9/F10/F12\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text:
+                    ' keys. Select the option that boots the PC from the USB flash drive.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+                'Now, The CentOS Linux installation process will be started.'
+                ' Use the up and down key to go to Install CentOS Linux.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                )),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'Press.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: '\tEnter\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: 'key.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/2.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/2.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+                ' Install CentOS Linux is booted and testing the process.'
+                    ' After, the window below will prompt you to select the installation language.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                )),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/3.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/3.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/centosinstallation/4.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/centosinstallation/4.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Now, you should select your preferred language. I’m using',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+
+                  TextSpan(
+                    text: '\tEnglish',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ])),
+              const SizedBox(height: 5.0,),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Click ',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'Continue',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+
+                  TextSpan(
+                    text: '.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ])),
             const SizedBox(height: 10.0,),
-            RichText(
-                text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Connect the',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                  TextSpan(
-                    text: '\tUSB flash\t',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w700,),
-                  ),
-                  TextSpan(
-                    text: 'drive to a PC. Turn on the PC and press the key'
-                        ' that opens the boot-device selection menu for the computer such as the,',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                  TextSpan(
-                    text: '\tEsc/F9/F10/F12\t',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w700,),
-                  ),
-                  TextSpan(
-                    text: ' keys. Select the option that boots the PC from the USB flash drive.',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                ])),
-            const SizedBox(
-              height: 10.0,
-            ),
-            const Text('Now, The CentOS Linux installation process will be started.'
-                ' Use the up and down key to go to Install CentOS Linux.', style: TextStyle(color: Colors.black,fontSize: 15,
-              fontWeight: FontWeight.w400,)),
-            const SizedBox(
-              height: 10.0,
-            ),
-            RichText(
-                text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Press.',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
-                  TextSpan(
-                    text: '\tEnter\t',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w700,),
-                  ),
-                  TextSpan(
-                    text: 'key.',
-                    style: TextStyle(color: Colors.black,fontSize: 15,
-                      fontWeight: FontWeight.w400,),
-                  ),
 
-                ])),
-
-            const SizedBox(
-              height: 10.0,
-            ),
-            orientation == Orientation.portrait
-                ? Image.asset(
-                    'assets/installation/centosinstallation/2.png',
-                    height: 250.0,
-                    width: width,
-                  )
-                : Image.asset(
-                    'assets/installation/centosinstallation/2.png',
-                    height: 500.0,
-                    width: width,
-                  ),
-            const SizedBox(
-              height: 10.0,
-            ),
-            orientation == Orientation.portrait
-                ? Image.asset(
-                    'assets/installation/centosinstallation/3.png',
-                    height: 250.0,
-                    width: width,
-                  )
-                : Image.asset(
-                    'assets/installation/centosinstallation/3.png',
-                    height: 500.0,
-                    width: width,
-                  ),
-            const SizedBox(
-              height: 10.0,
-            ),
-            orientation == Orientation.portrait
-                ? Image.asset(
-                    'assets/installation/centosinstallation/4.png',
-                    height: 250.0,
-                    width: width,
-                  )
-                : Image.asset(
-                    'assets/installation/centosinstallation/4.png',
-                    height: 500.0,
-                    width: width,
-                  ),
-            const SizedBox(
-              height: 10.0,
-            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/5.png',
@@ -383,6 +517,39 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Now, should setup the\t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'Installation summary',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+
+                  TextSpan(
+                    text: '.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ])),
+
+
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/6.png',
@@ -394,6 +561,141 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Localization',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black),
+            ),
+            const SizedBox(height: 5.0,),
+            const Text(
+              'Keyboard',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Now, should add your preferable\t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'keyboard layout',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+
+                  TextSpan(
+                    text: '.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Click \t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '[ + ]',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+
+                  TextSpan(
+                    text: '\tsymbol to add\t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'keyboard layout',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '\tand\t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '[ - ]',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '\t symbol to remove\t',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  TextSpan(
+                    text: 'keyboard layout',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                  
+
+                ])),
+
+
+
+
             const SizedBox(
               height: 10.0,
             ),
