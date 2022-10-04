@@ -1389,6 +1389,151 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text(
+              'System',
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              'Installation Destination',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'In the\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Installation Destination',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: ',\tto select\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Automatic',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text:
+                    '\toption to create automatically partition the hard drive. Otherwise, Select\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Custom',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\toption to manually create the partitions.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text:
+                      'To ensure the partition option and selected the hard disk.'
+                      ' In my case, I was select\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Automatic',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\toption to automatically create the partitions.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -1406,6 +1551,81 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text(
+              'KDUMP',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'kdump is\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'a feature of the Linux kernel that creates crash '
+                      'dumps in the event of a kernel crash',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text:
+                      '.\t When triggered, kdump exports a memory image that can be '
+                      'analyzed for the purposes of debugging and determining the cause of a crash.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'If you will unchecked the\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Enable kdump',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: ', you can save memory.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/15.png',
@@ -1420,6 +1640,68 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'In my case, I was\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'unchecked kdump',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/16.png',
@@ -1431,6 +1713,16 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Network and Hostname',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
             const SizedBox(
               height: 10.0,
             ),
