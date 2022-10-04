@@ -2224,6 +2224,53 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text(
+              'Now, this Installation Summary should ready for the Begin Installation.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(height: 5.0,),
+            const Text(
+              'Once again, Overview all things.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(height: 5.0,),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Press\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: ' Begin Installation',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/22.png',
@@ -2235,6 +2282,29 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'CentOS Linux',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\tinstallation is processing.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -2252,6 +2322,107 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'CentOS Linux',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\tInstallation is completed.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'At this point, it is safe to remove your installation media, or in this case,\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'unmount',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '\t the ISO image file. During the reboot process, select the first entry and hit\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'ENTER',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Reboot System',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/24.png',
@@ -2266,6 +2437,46 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text(
+              'Now, CentOS Linux login page show here.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(height: 5.0,),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Press\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Enter',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/25.png',
@@ -2277,6 +2488,45 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'In the CentOS Linux login screen. Enter your user password.',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(height: 5.0,),
+            RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Press\t',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+                TextSpan(
+                  text: 'Enter',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                TextSpan(
+                  text: '.',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ]),
+            ),
             const SizedBox(
               height: 10.0,
             ),
