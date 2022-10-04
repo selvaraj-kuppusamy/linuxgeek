@@ -200,17 +200,47 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text(
-              'Proceed to CentOS official site. then go to downloads.'
-              ' Thereafter, download the CentOS Linux ISO file for free. '
-              'There are several CentOS Linux versions are there. '
-              'In my case, I was choose to CentOS Linux 9 ISO file.Approximate, '
-              'CentOS ISO file size is 9GB to download.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
-            ),
+            // const Text(
+            //   'Proceed to CentOS official site. then go to downloads.'
+            //   ' Thereafter, download the CentOS Linux ISO file for free. '
+            //   'There are several CentOS Linux versions are there. '
+            //   'In my case, I was choose to CentOS Linux 9 ISO file.Approximate, '
+            //   'CentOS ISO file size is 9GB to download.',
+            //   style: TextStyle(
+            //       fontSize: 15,
+            //       fontWeight: FontWeight.w400,
+            //       color: Colors.black),
+            // ),
+            RichText(
+                text: TextSpan(children: [
+                  const TextSpan(
+                    text: 'Proceed to\t',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                  TextSpan(
+                      text: 'CentOS official site',
+                      style: const TextStyle(color: Colors.blue,fontSize: 15,
+                        fontWeight: FontWeight.w400,),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => {
+                          setState(() {
+                            centos(centoswebsite);
+                          }),
+                        }),
+                  const TextSpan(
+                    text: '.\tthen go to downloads. Thereafter, '
+                        'download the CentOS Linux ISO file for free. There are several'
+                        ' CentOS Linux versions are there. Choose CentOS Linux versions based on '
+                        'your system configuration.',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                ])),
+            const SizedBox(height: 10.0,),
+            const Text('Approximate, CentOS ISO file size is 9GB to download.', style: TextStyle(color: Colors.black,fontSize: 15,
+              fontWeight: FontWeight.w400,)),
+
             const SizedBox(
               height: 10.0,
             ),
@@ -229,11 +259,73 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             const Text(
-              'Step 2:- sdfewrbfgoire',
+              'Step 3:- Installing CentOS in Hardware',
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   color: Colors.black),
+            ),
+            const SizedBox(height: 10.0,),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Connect the',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                  TextSpan(
+                    text: '\tUSB flash\t',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w700,),
+                  ),
+                  TextSpan(
+                    text: 'drive to a PC. Turn on the PC and press the key'
+                        ' that opens the boot-device selection menu for the computer such as the,',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                  TextSpan(
+                    text: '\tEsc/F9/F10/F12\t',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w700,),
+                  ),
+                  TextSpan(
+                    text: ' keys. Select the option that boots the PC from the USB flash drive.',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Now, The CentOS Linux installation process will be started.'
+                ' Use the up and down key to go to Install CentOS Linux.', style: TextStyle(color: Colors.black,fontSize: 15,
+              fontWeight: FontWeight.w400,)),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press.',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+                  TextSpan(
+                    text: '\tEnter\t',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w700,),
+                  ),
+                  TextSpan(
+                    text: 'key.',
+                    style: TextStyle(color: Colors.black,fontSize: 15,
+                      fontWeight: FontWeight.w400,),
+                  ),
+
+                ])),
+
+            const SizedBox(
+              height: 10.0,
             ),
             orientation == Orientation.portrait
                 ? Image.asset(
