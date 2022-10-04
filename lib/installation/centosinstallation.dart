@@ -832,7 +832,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children: [
+                text: const TextSpan(children:[
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -932,7 +932,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children: [
+                text: const TextSpan(children:[
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -997,7 +997,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
-                text: const TextSpan(children: [
+                text: const TextSpan
+                  (children:[
               TextSpan(
                 text: 'Click\t',
                 style: TextStyle(
@@ -1151,7 +1152,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
               ),
               TextSpan(
-                text: 'Done',
+                text: '\tDone',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 15,
@@ -1182,6 +1183,196 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Software Selection',
+              style: TextStyle(
+                  fontSize: 17,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              'The common installation types are:',
+              style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black),
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: '\u27A4\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Minimal Install :',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text:
+                    '\tMinimal server without GUI, for advanced Linux sysadmins.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: '\u27A4\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Workstation :',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\tFor installation on laptops and PCs.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: '\u27A4\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Server with GUI :',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text:
+                    '\t Server installation with graphical interface for administration.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+              TextSpan(
+                text: 'In my case, I choose\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Workstation',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '\tand also select\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Additional software for Selected Environment',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children:[
+              TextSpan(
+                text: 'Click\t',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              TextSpan(
+                text: 'Done',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              TextSpan(
+                text: '.',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+            ])),
             const SizedBox(
               height: 10.0,
             ),

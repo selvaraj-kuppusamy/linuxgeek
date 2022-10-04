@@ -12,8 +12,8 @@ class _OverviewState extends State<Overview> {
     return SafeArea(
         child: Scaffold(
           body: Column(
-            children: [
-              Text('Hekkos'),
+            children: const [
+               Text('Hekkos'),
             ],
           ),
         )
