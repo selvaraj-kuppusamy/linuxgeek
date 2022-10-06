@@ -45,7 +45,7 @@ class _LinuxState extends State<Linux> {
         ),
         body:SingleChildScrollView(
           child: Container(
-            padding: const EdgeInsets.only(right: 20.0,left: 20.0 ,top: 30.0),
+            padding: const EdgeInsets.only(right: 20.0,left: 20.0 ,top: 30.0,bottom: 20.0),
             child: Column(
               children: [
                   Row(

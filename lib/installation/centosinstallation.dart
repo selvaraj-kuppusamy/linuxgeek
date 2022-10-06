@@ -2,6 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../utils/textstyle.dart';
+
 class Centosinstallation extends StatefulWidget {
   const Centosinstallation({Key? key}) : super(key: key);
 
@@ -55,10 +57,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
           children: [
             const Text(
               'CentOS Installation in Hardware',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.black),
+              style: darktext1,
             ),
             orientation == Orientation.portrait
                 ? Image.asset(
@@ -76,10 +75,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'CentOS Linux',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
+              style: darktext2,
             ),
             const SizedBox(
               height: 10.0,
@@ -88,11 +84,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: TextSpan(children: [
               TextSpan(
                   text: 'CentOS',
-                  style: const TextStyle(
-                    color: Colors.blue,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: bluetext1,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => {
                           setState(() {
@@ -104,11 +96,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     '\t is a Linux distribution that provides a free and open-source '
                     'community-supported computing platform,'
                     ' functionally compatible with its upstream source, Red Hat Enterprise Linux.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -116,21 +104,14 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'System requirements',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
+              style: darktext2,
             ),
             const SizedBox(
               height: 10.0,
             ),
             const Text(
               '\u27A4\t 20GB free disk space.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
-            ),
+              style: normaltext1,),
             const SizedBox(
               height: 5.0,
             ),
@@ -145,19 +126,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: TextSpan(children: [
               const TextSpan(
                 text: '\u27A4\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: bluetext1,
               ),
               TextSpan(
                   text: 'Virtual Box',
-                  style: const TextStyle(
-                    color: Colors.blue,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: normaltext1,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => {
                           setState(() {
@@ -166,11 +139,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                         }),
               const TextSpan(
                 text: '\ton the System.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -179,41 +148,28 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               '\u27A4\t CentOS ISO File.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
+              style: normaltext1,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t A minimum of 4 GB RAM is recommended.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
+              style: normaltext1,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t One core or thread for each virtualized CPU and one for the host.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
+              style: normaltext1,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Step 1 :- Download CentOS Linux ISO',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
-            ),
+              style: darktext2,),
             const SizedBox(
               height: 10.0,
             ),
@@ -232,19 +188,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: TextSpan(children: [
               const TextSpan(
                 text: 'Proceed to\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                   text: 'CentOS official site',
-                  style: const TextStyle(
-                    color: Colors.blue,
-                    fontSize: 15,
-                    fontWeight: FontWeight.w400,
-                  ),
+                  style: bluetext1,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => {
                           setState(() {
@@ -256,22 +204,14 @@ class _CentosinstallationState extends State<Centosinstallation> {
                     'download the CentOS Linux ISO file for free. There are several'
                     ' CentOS Linux versions are there. Choose CentOS Linux versions based on '
                     'your system configuration.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
               height: 10.0,
             ),
             const Text('Approximate, CentOS ISO file size is 9GB to download.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                )),
+                style: normaltext1,),
 
             const SizedBox(
               height: 10.0,
@@ -292,10 +232,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Step 3:- Installing CentOS in Hardware',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
+              style: darktext2,
             ),
             const SizedBox(
               height: 10.0,
@@ -304,45 +241,25 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Connect the',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tUSB flash\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: 'drive to a PC. Turn on the PC and press the key'
                     ' that opens the boot-device selection menu for the computer such as the,',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tEsc/F9/F10/F12\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text:
                     ' keys. Select the option that boots the PC from the USB flash drive.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -351,11 +268,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const Text(
                 'Now, The CentOS Linux installation process will be started.'
                 ' Use the up and down key to go to Install CentOS Linux.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                )),
+                style: normaltext1,),
             const SizedBox(
               height: 10.0,
             ),
@@ -363,27 +276,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Press.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tEnter\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: 'key.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -407,11 +308,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const Text(
                 ' Install CentOS Linux is booted and testing the process.'
                 ' After, the window below will prompt you to select the installation language.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                )),
+                style: normaltext1,),
             const SizedBox(
               height: 10.0,
             ),
@@ -449,27 +346,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
               TextSpan(
                 text:
                     'Now, you should select your preferred language. I’m using',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tEnglish',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -479,27 +364,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click ',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Continue',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -524,27 +397,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should setup the\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Installation summary',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -567,20 +428,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Localization',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
-            ),
+              style: darktext2,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Keyboard',
-              style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.black),
+              style: mediumtext1,
             ),
 
             const SizedBox(
@@ -590,19 +444,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should add your preferable\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'keyboard layout',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
@@ -620,75 +466,39 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click \t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '[ + ]',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\tsymbol to add\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'keyboard layout',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\tand\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '[ - ]',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\t symbol to remove\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'keyboard layout',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -714,27 +524,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'English (India, with rupee)',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -744,27 +542,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Add',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -789,43 +575,23 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'I selected my',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tkeyboard layout\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: 'and also overview the',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tkeyboard layout',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -835,27 +601,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Done',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -877,11 +631,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Language Support',
-              style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.black),
-            ),
+              style: mediumtext1,),
             const SizedBox(
               height: 5.0,
             ),
@@ -889,43 +639,23 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should select your preferable\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'language support',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.\tIn my case, I was select additionally\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'English(India)',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -935,27 +665,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Done',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -978,20 +696,14 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Time and Date',
-              style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.black),
+              style: mediumtext1,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Choose the location as per your setup. In my case Region: Asia and City:Kolkata.',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
+              style: normaltext1,
             ),
             const SizedBox(
               height: 5.0,
@@ -1000,27 +712,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Done',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1042,20 +742,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
-            ),
+              style: darktext1,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Installation Source',
-              style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.black),
+              style: mediumtext1,
             ),
 
             const SizedBox(
@@ -1066,45 +759,25 @@ class _CentosinstallationState extends State<Centosinstallation> {
               TextSpan(
                 text:
                     'To specify a file or a location to install CentOS Linux from, Select\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Installation Source',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\tfrom the\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Installation Summary',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text:
                     '\tscreen. On this screen, you can choose between locally available '
                     'installation media, such as a DVD or an ISO file, or a network location.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1114,27 +787,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose default\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Auto-detected installation media',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\toption.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1144,27 +805,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '\tDone',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1187,21 +836,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software Selection',
-              style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.w500,
-                  color: Colors.black),
-            ),
+              style: mediumtext1,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'The common installation types are:',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black),
-            ),
+              style: normaltext1,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1209,28 +850,16 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Minimal Install :',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text:
                     '\tMinimal server without GUI, for advanced Linux sysadmins.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1240,27 +869,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: 'Workstation :',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\tFor installation on laptops and PCs.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -1271,28 +888,16 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Server with GUI :',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text:
                     '\t Server installation with graphical interface for administration.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
 
@@ -1303,43 +908,23 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Workstation',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '\tand also select\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Additional software for Selected Environment',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
@@ -1349,19 +934,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: darktext3,
               ),
               TextSpan(
                 text: 'Done',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700,
-                ),
+                style: normaltext1,
               ),
               TextSpan(
                 text: '.',
@@ -1391,11 +968,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'System',
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
-            ),
+              style: darktext2,),
             const SizedBox(
               height: 5.0,
             ),
