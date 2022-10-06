@@ -34,3 +34,9 @@ const normaltext1 = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
+const commandtext1 = TextStyle(
+    fontSize: 15,
+    fontWeight: FontWeight.w300,
+    color: Colors.black,
+);
+

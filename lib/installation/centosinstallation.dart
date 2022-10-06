@@ -1839,11 +1839,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'cat /etc/os-release',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.black),
-            ),
+              style: commandtext1,),
             const SizedBox(
               height: 10.0,
             ),
@@ -1897,11 +1893,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'yum update',
-              style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.w300,
-                  color: Colors.black),
-            ),
+              style: commandtext1,),
             const SizedBox(
               height: 10.0,
             ),
