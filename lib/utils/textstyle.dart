@@ -35,8 +35,7 @@ const normaltext1 = TextStyle(
 );
 
 const commandtext1 = TextStyle(
-    fontSize: 15,
-    fontWeight: FontWeight.w300,
-    color: Colors.black,
+  fontSize: 15,
+  fontWeight: FontWeight.w300,
+  color: Colors.black,
 );
-

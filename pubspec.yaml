@@ -67,6 +67,7 @@ flutter:
     #installation folder
     - assets/installation/
     - assets/installation/centosinstallation/
+    - assets/installation/redhatinstallation/
     #distros folder
     - assets/distros/ubuntu/
     - assets/distros/redhat/
