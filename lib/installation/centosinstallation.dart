@@ -434,7 +434,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Keyboard',
-              style: mediumtext1,
+              style: darktext4,
             ),
 
             const SizedBox(
@@ -631,7 +631,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Language Support',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -696,7 +696,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Time and Date',
-              style: mediumtext1,
+              style: darktext4,
             ),
             const SizedBox(
               height: 5.0,
@@ -748,7 +748,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Installation Source',
-              style: mediumtext1,
+              style: darktext4,
             ),
 
             const SizedBox(
@@ -836,7 +836,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software Selection',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -974,7 +974,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Installation Destination',
-              style: mediumtext1,
+              style: darktext4,
             ),
 
             const SizedBox(
@@ -1071,7 +1071,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'KDUMP',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1184,7 +1184,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Network and Hostname',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1270,7 +1270,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Security Profile',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1330,7 +1330,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Root password',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1424,7 +1424,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Root password',
-              style: mediumtext1,),
+              style: darktext4,),
             const SizedBox(
               height: 5.0,
             ),
@@ -1863,7 +1863,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Update the CentOS Linux',
-              style: mediumtext1,
+              style: darktext4,
             ),
             const SizedBox(
               height: 5.0,

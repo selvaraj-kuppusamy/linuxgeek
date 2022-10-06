@@ -16,6 +16,12 @@ const darktext3 = TextStyle(
   fontWeight: FontWeight.w700,
 );
 
+const darktext4 = TextStyle(
+  color: Colors.black,
+  fontSize: 17,
+  fontWeight: FontWeight.w500,
+);
+
 const bluetext1 = TextStyle(
   color: Colors.blue,
   fontSize: 15,
@@ -28,8 +34,3 @@ const normaltext1 = TextStyle(
   fontWeight: FontWeight.w400,
 );
 
-const mediumtext1 = TextStyle(
-  color: Colors.black,
-  fontSize: 17,
-  fontWeight: FontWeight.w500,
-);
