@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../utils/textstyle.dart';
 
@@ -17,6 +19,46 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
     var size = MediaQuery.of(context).size;
     //var height = size.height;
     var width = size.width;
+
+    Future<void> redhat(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+    Future<void> virtualbox(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+    Future<void> redhatlogin(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+    Future<void> downloadredhat(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+
+    final Uri redhatwebsite = Uri(scheme: 'https', host: 'www.redhat.com');
+    final Uri login = Uri.parse('https://www.redhat.com/wapps/sso/login.html');
+    final Uri download = Uri.parse('https://developers.redhat.com/products/rhel/download');
+    final Uri virtualboxwebsite =
+    Uri(scheme: 'https', host: 'www.virtualbox.org');
+
 
     return SafeArea(child: Scaffold(
       backgroundColor: const Color(0xffe6f2ff),
@@ -37,14 +79,143 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           orientation == Orientation.portrait
               ? Image.asset(
-            'assets/installation/centos.png',
+            'assets/installation/redhatinstallation/redhat.png',
             height: 150.0,
             width: width,
           )
               : Image.asset(
-            'assets/installation/centos.png',
+            'assets/installation/redhatinstallation/redhat.png',
             height: 260.0,
             width: width,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const Text(
+            'Red Hat Enterprise Linux',
+            style: darktext2,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                    text: 'Red Hat Enterprise Linux',
+                    style: bluetext1,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => {
+                        setState(() {
+                          redhat(redhatwebsite);
+                        }),
+                      }),
+                const TextSpan(
+                  text:
+                  '\tis a commercial open source Linux distribution developed by Red Hat'
+                      ' for the commercial market.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const Text(
+            'System requirements',
+            style: darktext2,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const Text(
+            '\u27A4\t 20GB free disk space.',
+            style: normaltext1,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          // const Text(
+          //   '\u27A4\t Virtual Box on the System.',
+          //   style: TextStyle(
+          //       fontSize: 15,
+          //       fontWeight: FontWeight.w400,
+          //       color: Colors.black),
+          // ),
+          RichText(
+              text: TextSpan(children: [
+                const TextSpan(
+                  text: '\u27A4\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                    text: 'Virtual Box',
+                    style: bluetext1,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => {
+                        setState(() {
+                          virtualbox(virtualboxwebsite);
+                        }),
+                      }),
+                const TextSpan(
+                  text: '\ton the System.',
+                  style: normaltext1,
+                ),
+              ])),
+
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t RHEL ISO File.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t A minimum of 4 GB RAM is recommended.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t One core or thread for each virtualized CPU and one for the host.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          const Text(
+            'Step 1 :- Download Red Hat Enterprise Linux 9 ISO',
+            style: darktext2,),
+          const SizedBox(
+            height: 10.0,
+          ),
+          RichText(
+              text: TextSpan(children: [
+                const TextSpan(
+                  text: 'Proceed to\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                    text: 'Red Hat Login Page',
+                    style: bluetext1,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => {
+                        setState(() {
+                          redhatlogin(login);
+                        }),
+                      }),
+                const TextSpan(
+                  text: '\tand enter the username or email and password to logged in. '
+                      'If you don’t have account create new one and next proceed the process.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -54,8 +225,37 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           )
               : Image.asset(
             'assets/installation/redhatinstallation/1.png',
-            height: 400.0,
+            height: 300.0,
             width: width,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          RichText(
+              text: TextSpan(children: [
+                const TextSpan(
+                  text: 'Thereafter, download the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                    text: 'Red Hat Enterprise Linux',
+                    style: bluetext1,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => {
+                        setState(() {
+                          downloadredhat(download);
+                        }),
+                      }),
+                const TextSpan(
+                  text: '\tfor free.',
+                  style: normaltext1,
+                ),
+              ])),
+            const SizedBox(height: 10.0,),
+          const Text('Choose Redhat Enterprises Linux version and download it',style: normaltext1,),
+          const Text('In my case, I choose Red Hat Enterprise Linux 9.',style: normaltext1,),
+          const SizedBox(
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
