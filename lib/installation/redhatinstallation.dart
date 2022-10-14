@@ -510,7 +510,6 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const SizedBox(
             height: 15.0,
           ),
-
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/6.png',
@@ -574,7 +573,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'Select File Location and Size.',
             style: normaltext1,
           ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(
+            height: 5.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -628,6 +629,10 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 500.0,
                   width: width,
                 ),
+          const Text(
+            'Now, new virtual machine has been successfully created.',
+            style: normaltext1,
+          ),
 
           orientation == Orientation.portrait
               ? Image.asset(
@@ -640,6 +645,28 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 100.0,
                   width: width,
                 ),
+          const Text(
+            'Step 3:- Setting Up the Virtual Machine for RHEL',
+            style: darktext2,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Click\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Settings',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '.',
+              style: normaltext1,
+            ),
+          ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/10.PNG',
@@ -651,6 +678,37 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 100.0,
                   width: width,
                 ),
+          const Text(
+            'In the general option, choose Advanced tab.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text:
+                  'Here you can choose shared clipboard settings. Select each dropdown menu and choose the\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Bidirectional',
+              style: darktext3,
+            ),
+            TextSpan(
+              text:
+                  '\toption to enable the machine’s clipboard sharing and drag-drop features.',
+              style: normaltext1,
+            ),
+          ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            'It is used to copy and paste some content between the virtual machine and the host.',
+            style: normaltext1,
+          ),
 
           orientation == Orientation.portrait
               ? Image.asset(
