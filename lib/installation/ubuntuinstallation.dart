@@ -10,6 +10,18 @@ class Ubuntuinstallation extends StatefulWidget {
 class _UbuntuinstallationState extends State<Ubuntuinstallation> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          title: const Text('Ubuntu Installation'),
+          centerTitle: true,
+        ),,
+
+      ),
+    );
   }
 }
