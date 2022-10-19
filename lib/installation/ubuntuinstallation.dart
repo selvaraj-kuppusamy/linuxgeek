@@ -38,6 +38,18 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             ),
             orientation == Orientation.portrait
                 ? Image.asset(
+              'assets/installation/ubuntuinstallation/ubuntuserver.png',
+              height: 150.0,
+              width: width,
+            )
+                : Image.asset(
+              'assets/installation/ubuntuinstallation/ubuntuserver.png',
+              height: 250.0,
+              width: width,
+            ),
+            const SizedBox(height: 10.0,),
+            orientation == Orientation.portrait
+                ? Image.asset(
               'assets/installation/ubuntuinstallation/2.png',
               height: 250.0,
               width: width,
