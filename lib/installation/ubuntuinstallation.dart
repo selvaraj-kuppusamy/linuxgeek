@@ -19,7 +19,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
           ),
           title: const Text('Ubuntu Installation'),
           centerTitle: true,
-        ),,
+        ),
 
       ),
     );
