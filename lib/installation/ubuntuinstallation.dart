@@ -15,7 +15,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
     var orientation = MediaQuery.of(context).orientation;
     //size of the window
     var size = MediaQuery.of(context).size;
-    var height = size.height;
+    //var height = size.height;
     var width = size.width;
 
     return SafeArea(
@@ -47,6 +47,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/3.png',
@@ -58,6 +59,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/4.png',
@@ -69,6 +71,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/5.png',
@@ -80,6 +83,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/6.png',
@@ -91,6 +95,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/7.png',
@@ -102,6 +107,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/8.png',
@@ -113,6 +119,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/9.png',
@@ -124,6 +131,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/10.png',
@@ -135,6 +143,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/11.png',
@@ -146,6 +155,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/12.png',
@@ -157,7 +167,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
-
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/13.png',
@@ -169,6 +179,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/14.png',
@@ -180,6 +191,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/15.png',
@@ -191,6 +203,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/16.png',
@@ -202,6 +215,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/17.png',
@@ -213,6 +227,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/18.png',
@@ -224,6 +239,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/19.png',
@@ -235,6 +251,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/20.png',
@@ -246,6 +263,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/21.png',
@@ -257,6 +275,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/22.png',
@@ -268,6 +287,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/23.png',
@@ -279,6 +299,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/24.png',
@@ -290,6 +311,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 500.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/25.png',
