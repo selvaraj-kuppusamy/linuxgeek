@@ -9,6 +9,10 @@ class Ubuntu extends StatefulWidget {
 class _UbuntuState extends State<Ubuntu> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Scaffold(
+        
+      ),
+    );
   }
 }

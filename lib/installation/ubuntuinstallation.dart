@@ -10,6 +10,12 @@ class Ubuntuinstallation extends StatefulWidget {
 class _UbuntuinstallationState extends State<Ubuntuinstallation> {
   @override
   Widget build(BuildContext context) {
+    var orientation = MediaQuery.of(context).orientation;
+    //size of the window
+    var size = MediaQuery.of(context).size;
+    //var height = size.height;
+    var width = size.width;
+
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -20,7 +26,6 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
           title: const Text('Ubuntu Installation'),
           centerTitle: true,
         ),
-
       ),
     );
   }
