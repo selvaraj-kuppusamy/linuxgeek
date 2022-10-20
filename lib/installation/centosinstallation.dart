@@ -210,7 +210,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('Approximate, CentOS ISO file size is 9GB to download.',
+            const Text('In my case, I choose CentOS Stream Linux 9.',
                 style: normaltext1,),
 
             const SizedBox(

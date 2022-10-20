@@ -721,6 +721,56 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 520.0,
                   width: width,
                 ),
+          const Text(
+            'After clicking on the storage, we will attach the Red Hat Enterprise Linux 9 '
+            'ISO file to our operating system.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Click on the\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Empty',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '\tunder',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: ' Controller: IDE',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '.',
+              style: normaltext1,
+            ),
+          ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'After click on\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Empty',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '.',
+              style: normaltext1,
+            ),
+          ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/12.png',
@@ -732,6 +782,50 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 520.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Choose your\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Red Hat Enterprise Linux 9 iso image file',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '\tin your local system. And then select\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Red Hat Enterprise Linux 9 iso image file',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: ', then',
+              style: normaltext1,
+            ),
+          ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Click\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Open',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '.',
+              style: normaltext1,
+            ),
+          ])),
+          const SizedBox(
+            height: 15.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/13.png',
@@ -743,6 +837,31 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 383.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 15.0,
+          ),
+          const Text(
+            'Now, Red Hat Enterprise Linux 9 image file was selected.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Click\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Ok',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '.',
+              style: normaltext1,
+            ),
+          ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/14.png',
@@ -754,7 +873,45 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 510.0,
                   width: width,
                 ),
-
+          const Text(
+            'Step 4:- Installing RHEL in VirtualBox',
+            style: darktext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            'Now, let’s boot up our machine and Install Red Hat Enterprise Linux.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Click\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Start',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: ' icon on first screen.',
+              style: normaltext1,
+            ),
+          ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            'The Red Hat Enterprise Linux installation process will be started.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/15.png',
@@ -766,10 +923,33 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const Text(
+            'Now, use the up and down key to go to Install Red Hat Enterprise Linux.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+            TextSpan(
+              text: 'Press\t',
+              style: normaltext1,
+            ),
+            TextSpan(
+              text: 'Enter',
+              style: darktext3,
+            ),
+            TextSpan(
+              text: '\tkey.',
+              style: normaltext1,
+            ),
+          ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/16.png',
-                  height: 350.0,
+                  height: 300.0,
                   width: width,
                 )
               : Image.asset(
