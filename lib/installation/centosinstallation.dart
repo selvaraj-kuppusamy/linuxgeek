@@ -934,11 +934,11 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
-                style: darktext3,
+                style: normaltext1,
               ),
               TextSpan(
                 text: 'Done',
-                style: normaltext1,
+                style: darktext3,
               ),
               TextSpan(
                 text: '.',
@@ -1541,7 +1541,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: ' Begin Installation',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',
@@ -1570,7 +1570,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'CentOS Linux',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '\tinstallation is processing.',
@@ -1599,7 +1599,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'CentOS Linux',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '\tInstallation is completed.',
@@ -1619,7 +1619,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'unmount',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text:
@@ -1628,7 +1628,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'ENTER',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',
@@ -1647,7 +1647,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'Reboot System',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',
@@ -1687,7 +1687,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'Enter',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',
@@ -1728,7 +1728,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'Enter',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',
@@ -1761,7 +1761,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'CentOS Linux',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '\tLogin logged successfully.',
@@ -1794,7 +1794,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 ),
                 TextSpan(
                   text: 'CentOS Linux',
-                  style: darktext2,
+                  style: darktext3,
                 ),
                 TextSpan(
                   text: '.',

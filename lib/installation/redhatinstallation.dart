@@ -1487,6 +1487,118 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Software Selection',
+            style: darktext4,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            'The common installation types are:',
+            style: normaltext1,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: '\u27A4\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Minimal Install :',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text:
+                  '\tMinimal server without GUI, for advanced Linux sysadmins.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: '\u27A4\t',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'Workstation :',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tFor installation on laptops and PCs.',
+                  style: normaltext1,
+                ),
+              ])),
+
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: '\u27A4\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Server with GUI :',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text:
+                  '\t Server installation with graphical interface for administration.',
+                  style: normaltext1,
+                ),
+              ])),
+
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'In my case, I choose\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Workstation',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tand also select\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Additional software for Selected Environment',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/28.png',
@@ -1498,6 +1610,66 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Installation Destination',
+            style: darktext4,
+          ),
+
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'In the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Installation Destination',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: ',\tto select\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Automatic',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text:
+                  '\toption to create automatically partition the hard drive. Otherwise, Select\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Custom',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\toption to manually create the partitions.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text('To ensure the partition option and selected the hard disk.',style: normaltext1,),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/29.png',
@@ -1509,6 +1681,37 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'In my case, I was select\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Custom ',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'option to manually create the partitions.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/30.png',
@@ -1520,6 +1723,64 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Now, In the manual partitioning screen. By default, the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'LVM ',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'partitioning scheme is selected.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'To creating the partitions, click on the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '[ + ]',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tsymbol and to deleting the partitions, click on the \t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '[ - ]',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tsymbol.',
+                  style: normaltext1,
+                ),
+
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: '/boot -	1024MB\n',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '/root -	45GB\n',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'swap  - 4GB',
+                  style: darktext3,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          const Text('You will create partitions based on your purposes and disk size.',style: normaltext1,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/31.png',
@@ -1531,6 +1792,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/32.png',
