@@ -2536,7 +2536,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 style: darktext3,
               ),
               TextSpan(
-                text:'\t should ready for the\t',
+                text:'\tshould ready for the\t',
                 style: normaltext1,
               ),
               TextSpan(
@@ -2616,11 +2616,42 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           RichText(
             text: const TextSpan(children: [
               TextSpan(
-                text: 'Click\t',
+                text: 'Red Hat Enterprise Linux',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tInstallation is completed.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'At this point, it is safe to remove your installation media, or in this case,\t',
                 style: normaltext1,
               ),
               TextSpan(
-                text: '',
+                text: 'unmount ',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tthe ISO image file. During the reboot process, '
+                    'select the first entry and hit ENTER.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: '\tReboot System',
                 style: darktext3,
               ),
               TextSpan(
@@ -2640,10 +2671,43 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Now, Red Hat Enterprise Linux\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'GRUB file',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tshow here.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: ' Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Enter',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/48.png',
-                  height: 300.0,
+                  height: 250.0,
                   width: width,
                 )
               : Image.asset(
