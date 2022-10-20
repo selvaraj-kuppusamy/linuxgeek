@@ -942,11 +942,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               ),
               TextSpan(
                 text: '.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w400,
-                ),
+                style: normaltext1,
               ),
             ])),
             const SizedBox(
