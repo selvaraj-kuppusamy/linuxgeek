@@ -1372,7 +1372,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   style: normaltext1,
                 ),
                 TextSpan(
-                  text: ' Allow root SSH login with password',
+                  text: 'Allow root SSH login with password',
                   style: darktext3,
                 ),
                 TextSpan(
@@ -1387,7 +1387,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
-                  text: 'Click \t',
+                  text: 'Click\t',
                   style: normaltext1,
                 ),
                 TextSpan(
@@ -1395,7 +1395,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
                   style: darktext3,
                 ),
                 TextSpan(
-                  text: '.',
+                  text: '\ttwice.',
                   style: normaltext1,
                 ),
               ]),
@@ -1419,7 +1419,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             const Text(
-              'Root password',
+              'User Creation',
               style: darktext4,),
             const SizedBox(
               height: 5.0,
@@ -1489,7 +1489,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
-                  text: 'Press\t',
+                  text: 'Click\t',
                   style: normaltext1,
                 ),
                 TextSpan(
@@ -1536,7 +1536,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
               text: const TextSpan(children: [
                 TextSpan(
-                  text: 'Press\t',
+                  text: 'Click\t',
                   style: normaltext1,
                 ),
                 TextSpan(

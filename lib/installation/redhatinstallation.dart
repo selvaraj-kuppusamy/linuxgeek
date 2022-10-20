@@ -2304,21 +2304,34 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           RichText(
             text: const TextSpan(children: [
               TextSpan(
-                text: 'In the\t',
-                style: normaltext1,
-              ),
-              TextSpan(
-                text: 'Network and Hostname',
+                text: 'Security profile',
                 style: darktext3,
               ),
+
               TextSpan(
-                text: '\tsection, turn on the toggle in the network interface. '
-                    'Setting host Name is optional.',
+                text: '\tyou can choose the security policy for your system.',
                 style: normaltext1,
               ),
             ]),
           ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'In my case, I was choose\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Security profile',
+                style: darktext3,
+              ),
 
+              TextSpan(
+                text: '\tby default.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/41.png',
@@ -2330,6 +2343,82 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Root password',
+            style: darktext4,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'In the root account, enter the\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Root Password',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tand\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Confirm Password',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Also your preference to choose\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Lock root account',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tand\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Allow root SSH login with password',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Done',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/42.png',
@@ -2341,6 +2430,90 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'User Creation',
+            style: darktext4,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            'In the User Creation, you can set up your user account.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t Enter your name.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t Enter your user name.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t Pick your username.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+            '\u27A4\t Pick your password and confirm password.',
+            style: normaltext1,
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Also your preference to choose\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Make this user administrator',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tand\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Require a password to use this account',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Done',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/43.png',
@@ -2352,6 +2525,49 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Now, this\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Installation Summary',
+                style: darktext3,
+              ),
+              TextSpan(
+                text:'\t should ready for the\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Begin Installation',
+                style: darktext3,
+              ),
+              TextSpan(
+                text:'.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          const Text('Once again, overview all things.',style: normaltext1,),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Begin Installation',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/44.png',
@@ -2374,6 +2590,18 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Red Hat Enterprise Linux',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tInstallation is processing.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/46.png',
@@ -2385,6 +2613,22 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: '',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/47.png',
