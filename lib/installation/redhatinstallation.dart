@@ -1461,6 +1461,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   style: normaltext1,
                 ),
               ])),
+          const SizedBox(
+            height: 5.0,
+          ),
           RichText(
               text: const TextSpan(children: [
                 TextSpan(
@@ -1761,8 +1764,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   text: '\tsymbol.',
                   style: normaltext1,
                 ),
-
               ])),
+          const SizedBox(height: 5.0,),
+          const Text('In my case, disk size is 50 GB. so, I was create partitions based on my disk size.'),
           const SizedBox(height: 5.0,),
           RichText(
               text: const TextSpan(children: [
@@ -1792,6 +1796,55 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text('Boot partition',style: darktext4,),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'click on the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '[ + ]',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'symbol. specify the mount point as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/boot ',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'and size as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '1024 MB',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Add mount point',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
 
           orientation == Orientation.portrait
               ? Image.asset(
@@ -1804,6 +1857,30 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'From the partition table below, you can see that the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/boot',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition has been created. Overview the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/boot',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition.',
+                  style: normaltext1,
+                ),
+              ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/33.png',
@@ -1815,6 +1892,56 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text('Root partition',style: darktext4,),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'click on the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '[ + ]',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'symbol. specify the mount point as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/root ',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'and size as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '45 GB',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Add mount point',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/34.png',
@@ -1826,6 +1953,29 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'From the partition table below, you can see that the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/root',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition has been created. Overview the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '/root',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition.',
+                  style: normaltext1,
+                ),
+              ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/35.png',
@@ -1837,6 +1987,56 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text('Swap partition',style: darktext4,),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'click on the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '[ + ]',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'symbol. specify the mount point as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'swap ',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: 'and size as\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: '4 GB',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Add mount point',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/36.png',
@@ -1848,6 +2048,61 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'From the partition table below, you can see that the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'swap',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition has been created. Overview the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'swap',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartition.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Now,\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: ' /boot, /root, swap',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '\tpartitions are created.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Done',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/37.png',
@@ -1859,6 +2114,37 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Overview the\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'SUMMARY OF CHANGES',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
+          const SizedBox(height: 5.0,),
+          RichText(
+              text: const TextSpan(children: [
+                TextSpan(
+                  text: 'Click\t',
+                  style: normaltext1,
+                ),
+                TextSpan(
+                  text: 'Accept Changes',
+                  style: darktext3,
+                ),
+                TextSpan(
+                  text: '.',
+                  style: normaltext1,
+                ),
+              ])),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/38.png',
@@ -1870,6 +2156,84 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'KDUMP',
+            style: darktext4,),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'kdump is\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'a feature of the Linux kernel that creates crash '
+                    'dumps in the event of a kernel crash',
+                style: darktext3,
+              ),
+              TextSpan(
+                text:
+                '.\t When triggered, kdump exports a memory image that can be '
+                    'analyzed for the purposes of debugging and determining the cause of a crash.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'If you will unchecked the\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Enable kdump',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: ', you can save memory.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'In my case, I was choose\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Enable kdump',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: 'by default.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Done',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/39.png',
@@ -1881,6 +2245,47 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Network and Hostname',
+            style: darktext4,),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'In the\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Network and Hostname',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tsection, turn on the toggle in the network interface. '
+                    'Setting host Name is optional.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+          const SizedBox(height: 5.0,),
+          const Text('In my case, I choose default network. If you can change network connection, '
+              'you can configure it.',style: normaltext1,),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Click\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Done',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/40.png',
@@ -1892,6 +2297,28 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Security Profile',
+            style: darktext4,),
+          const SizedBox(height: 5.0,),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'In the\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Network and Hostname',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\tsection, turn on the toggle in the network interface. '
+                    'Setting host Name is optional.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
+
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/41.png',
