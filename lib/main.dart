@@ -203,8 +203,6 @@ class _LinuxState extends State<Linux> {
                         ),
                       ),
                     ),
-
-
                   ],
                 ),
               ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:linuxgeek/utils/textstyle.dart';
 class About extends StatefulWidget {
   const About({Key? key}) : super(key: key);
 
@@ -9,9 +10,26 @@ class About extends StatefulWidget {
 class _AboutState extends State<About> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:  Center(
-        child: Text("HELLO i AM About us"),
+    return SafeArea(
+      child:  Scaffold(
+          backgroundColor: const Color(0xffe6f2ff),
+          appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+          title: const Text('About Us'),
+          centerTitle: true,
+        ),
+        body: ListView(
+          padding: const EdgeInsets.all(15.0),
+          children: const [
+                Text('Linuxgeek is Linux learning application.',style: normaltext1,),
+                Text('Buy Coffee for me',style: darktext3,),
+                Text('velmanikpvs@oksbi',style: darktext3,)
+
+          ],
+        )
       ),
     );
   }
