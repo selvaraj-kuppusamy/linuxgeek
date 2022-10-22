@@ -2810,7 +2810,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           RichText(
             text: const TextSpan(children: [
               TextSpan(
-                text: ' Press\t',
+                text: 'Press\t',
                 style: normaltext1,
               ),
               TextSpan(
@@ -3009,6 +3009,20 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Verifying Subscription',
+            style: darktext4,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'List of attached subscription can be verified by running the below command.',
+            style: normaltext1,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'subscription-manager list',
+            style: commandtext1,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/56.png',
@@ -3020,6 +3034,21 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          const Text(
+            'Un-registering a system',
+            style: darktext4,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'Remove all subscriptions from Red Hat to run the below command.',
+            style: normaltext1,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'subscription-manager remove --all',
+            style: commandtext1,
+          ),
+          const SizedBox(height: 5.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/57.png',
@@ -3031,6 +3060,17 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 50.0,
                   width: width,
                 ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'To unregister the system from the Red Hat to run the below command.',
+            style: normaltext1,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'subscription-manager unregister',
+            style: commandtext1,
+          ),
+          const SizedBox(height: 5.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/58.png',
@@ -3042,6 +3082,17 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 51.8,
                   width: width,
                 ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'To remove all local data from the system from the Red Hat to run the below command.',
+            style: normaltext1,
+          ),
+          const SizedBox(height: 5.0,),
+          const Text(
+            'subscription-manager clean',
+            style: commandtext1,
+          ),
+          const SizedBox(height: 5.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/59.png',
@@ -3053,6 +3104,8 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 30.4,
                   width: width,
                 ),
+           const Text('Check, Red Hat Enterprise Linux'
+               ' details using neofetch command(Optional).',style: normaltext1,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/60.png',
@@ -3064,6 +3117,22 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 540.0,
                   width: width,
                 ),
+          RichText(
+            text: const TextSpan(children: [
+              TextSpan(
+                text: 'Finally,\t',
+                style: normaltext1,
+              ),
+              TextSpan(
+                text: 'Red Hat Enterprise Linux',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\thas successfully installed.',
+                style: normaltext1,
+              ),
+            ]),
+          ),
         ],
       ),
     ));
