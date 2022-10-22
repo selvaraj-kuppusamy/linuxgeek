@@ -93,7 +93,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 10.0,
+            height: 5.0,
           ),
           const Text(
             'Red Hat Enterprise Linux',
@@ -120,9 +120,6 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-          const SizedBox(
-            height: 10.0,
-          ),
           const SizedBox(
             height: 10.0,
           ),
@@ -193,7 +190,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           const Text(
-            'Step 1 :- Download Red Hat Enterprise Linux 9 ISO',
+            'Step 1 :- Download Red Hat Enterprise Linux ISO',
             style: darktext2,
           ),
           const SizedBox(
@@ -232,7 +229,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/1.png',
-                  height: 300.0,
+                  height: 350.0,
                   width: width,
                 ),
           const SizedBox(
@@ -307,7 +304,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/2.png',
-                  height: 100.0,
+                  height: 90.0,
                   width: width,
                 ),
           const Text(
@@ -518,7 +515,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/6.png',
-                  height: 500.0,
+                  height: 450.0,
                   width: width,
                 ),
           const SizedBox(
@@ -566,7 +563,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/7.png',
-                  height: 500.0,
+                  height: 450.0,
                   width: width,
                 ),
           const Text(
@@ -626,7 +623,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/8.png',
-                  height: 500.0,
+                  height: 480.0,
                   width: width,
                 ),
           const Text(
