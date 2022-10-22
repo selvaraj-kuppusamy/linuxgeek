@@ -834,7 +834,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/13.png',
-                  height: 393.0,
+                  height: 400.0,
                   width: width,
                 ),
           const SizedBox(
@@ -920,7 +920,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/15.png',
-                  height: 600.0,
+                  height: 570.0,
                   width: width,
                 ),
           const Text(
@@ -954,7 +954,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/16.png',
-                  height: 600.0,
+                  height: 570.0,
                   width: width,
                 ),
           const Text(
@@ -2359,7 +2359,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/40.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2408,7 +2408,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/41.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2496,7 +2496,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/42.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2592,7 +2592,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/43.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           RichText(
@@ -2653,7 +2653,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/44.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           orientation == Orientation.portrait
@@ -2664,7 +2664,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/45.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           RichText(
@@ -2687,7 +2687,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/46.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           RichText(
@@ -2750,7 +2750,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/47.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           RichText(
@@ -2796,7 +2796,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/48.png',
-                  height: 421.0,
+                  height: 470.0,
                   width: width,
                 ),
           const Text(
@@ -2830,7 +2830,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/49.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2864,7 +2864,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/50.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2879,7 +2879,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/51.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2895,7 +2895,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/52.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2925,7 +2925,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/53.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -2941,7 +2941,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/54.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -3005,7 +3005,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/55.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -3030,7 +3030,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/56.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           const Text(
@@ -3056,7 +3056,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/57.png',
-                  height: 50.0,
+                  height: 70.0,
                   width: width,
                 ),
           const SizedBox(height: 5.0,),
@@ -3078,7 +3078,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/58.png',
-                  height: 51.8,
+                  height: 60.0,
                   width: width,
                 ),
           const SizedBox(height: 5.0,),
@@ -3100,7 +3100,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/59.png',
-                  height: 30.4,
+                  height: 45.0,
                   width: width,
                 ),
            const Text('Check, Red Hat Enterprise Linux'
@@ -3113,7 +3113,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/60.png',
-                  height: 540.0,
+                  height: 600.0,
                   width: width,
                 ),
           RichText(
