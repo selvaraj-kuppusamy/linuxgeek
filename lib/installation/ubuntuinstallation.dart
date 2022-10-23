@@ -47,7 +47,12 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 250.0,
               width: width,
             ),
-            const SizedBox(height: 10.0,),
+            const SizedBox(height: 5.0,),
+            const Text('Ubuntu Linux'),
+            const SizedBox(height: 5.0,),
+            const Text(''),
+
+            const SizedBox(height: 5.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/2.png',
