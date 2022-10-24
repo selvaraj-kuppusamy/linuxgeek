@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../utils/textstyle.dart';
 
@@ -18,6 +20,16 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
     //var height = size.height;
     var width = size.width;
 
+    Future<void> ubuntu(Uri url) async {
+      if (!await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      )) {
+        throw 'Could not launch $url';
+      }
+    }
+
+    final Uri ubuntuwebsite = Uri(scheme: 'https', host: 'www.centos.org');
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color(0xffe6f2ff),
@@ -48,10 +60,28 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               width: width,
             ),
             const SizedBox(height: 5.0,),
-            const Text('Ubuntu Linux'),
+            const Text('Ubuntu Linux',style: darktext2,),
             const SizedBox(height: 5.0,),
-            const Text(''),
-
+            RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                      text: 'Ubuntu',
+                      style: bluetext1,
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => {
+                          setState(() {
+                            ubuntu(ubuntuwebsite);
+                          }),
+                        }),
+                  const TextSpan(
+                    text:
+                    '\tis a Linux distribution based on Debian and composed mostly of free and open-source software.'
+                        ' Ubuntu is officially released in three editions: Desktop, Server, '
+                        'and Core for Internet of things devices and robots. '
+                        'All the editions can run on the computer alone, or in a virtual machine.',
+                    style: normaltext1,
+                  ),
+                ])),
             const SizedBox(height: 5.0,),
             orientation == Orientation.portrait
                 ? Image.asset(

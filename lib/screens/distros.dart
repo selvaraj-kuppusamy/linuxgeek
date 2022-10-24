@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:linuxgeek/distros/centos.dart';
 import 'package:linuxgeek/distros/ubuntu.dart';
+
+import '../distros/redhat.dart';
 
 class Distros extends StatefulWidget {
   const Distros({Key? key}) : super(key: key);
@@ -62,7 +65,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const RedHat()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -92,7 +95,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const CentOS()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
