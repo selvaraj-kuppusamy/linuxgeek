@@ -45,12 +45,12 @@ class _KubuntuState extends State<Kubuntu> {
           children: [
             orientation == Orientation.portrait
                 ? Image.asset(
-              'assets/distros/kubuntu/kubuntulogo.PNG',
+              'assets/distros/kubuntu/kubuntulogo.png',
               height: 200.0,
               width:width,
             )
                 : Image.asset(
-              'assets/distros/kubuntu/kubuntulogo.PNG',
+              'assets/distros/kubuntu/kubuntulogo.png',
               height: 200.0,
               width: width,
             ),

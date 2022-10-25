@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:linuxgeek/distros/arch.dart';
 import 'package:linuxgeek/distros/bodhi.dart';
+import 'package:linuxgeek/distros/bunsenlabs.dart';
 import 'package:linuxgeek/distros/centos.dart';
 import 'package:linuxgeek/distros/debian.dart';
+import 'package:linuxgeek/distros/fedora.dart';
 import 'package:linuxgeek/distros/kali.dart';
 import 'package:linuxgeek/distros/kubuntu.dart';
 import 'package:linuxgeek/distros/linuxmint.dart';
 import 'package:linuxgeek/distros/mageia.dart';
 import 'package:linuxgeek/distros/neptune.dart';
 import 'package:linuxgeek/distros/pclinuxos.dart';
+import 'package:linuxgeek/distros/puppy.dart';
+import 'package:linuxgeek/distros/solus.dart';
 import 'package:linuxgeek/distros/ubuntu.dart';
 
 import '../distros/redhat.dart';
@@ -404,7 +408,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Bunsenlabs()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -434,7 +438,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Fedora()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -464,7 +468,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Solus()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -494,7 +498,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Puppy()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
