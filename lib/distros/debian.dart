@@ -20,7 +20,7 @@ class _DebianState extends State<Debian> {
     // var height = size.height;
     var width = size.width;
 
-    Future<void> arch(Uri url) async {
+    Future<void> debain(Uri url) async {
       if (!await launchUrl(
         url,
         mode: LaunchMode.externalApplication,
@@ -28,7 +28,8 @@ class _DebianState extends State<Debian> {
         throw 'Could not launch $url';
       }
     }
-    final Uri archwebsite = Uri(scheme: 'https', host: 'www.archlinux.org');
+
+    final Uri debainwebsite = Uri(scheme: 'https', host: 'www.debain.org');
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color(0xffe6f2ff),
@@ -37,7 +38,7 @@ class _DebianState extends State<Debian> {
             icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
             onPressed: () => Navigator.of(context).pop(),
           ),
-          title: const Text('Arch'),
+          title: const Text('Debian'),
           centerTitle: true,
         ),
         body: ListView(
@@ -45,97 +46,109 @@ class _DebianState extends State<Debian> {
           children: [
             orientation == Orientation.portrait
                 ? Image.asset(
-              'assets/distros/arch/archlinux.png',
-              height: 200.0,
-              width:width,
-            )
+                    'assets/distros/debian/debianlogo.png',
+                    height: 200.0,
+                    width: width,
+                  )
                 : Image.asset(
-              'assets/distros/arch/archlinux.png',
-              height: 200.0,
-              width: width,
+                    'assets/distros/debian/debianlogo.png',
+                    height: 200.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
             ),
-            const SizedBox(height: 10.0,),
             RichText(
                 text: TextSpan(children: [
-                  TextSpan(
-                      text: 'Arch Linux',
-                      style: bluetext1,
-                      recognizer: TapGestureRecognizer()
-                        ..onTap = () => {
+              TextSpan(
+                  text: 'Debian',
+                  style: bluetext1,
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () => {
                           setState(() {
-                            arch(archwebsite);
+                            debain(debainwebsite);
                           }),
                         }),
-                  const TextSpan(
-                    text: '\tis an independently developed, x86-64 general-purpose'
-                        ' Linux distribution that strives to provide the latest stable versions'
-                        ' of most software by following a rolling-release model. '
-                        'The default installation is a minimal base system, '
-                        'configured by the user to only add what is purposely required.',
-                    style: normaltext1,
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              const TextSpan(
+                text:
+                    ', also known as Debian GNU/Linux, is a Linux distribution composed of '
+                    'free and open-source software, developed by the community-supported Debian Project,'
+                    ' which was established by Ian Murdock on August 16, 1993.',
+                style: normaltext1,
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Developer :',
-                    style: darktext3,
-                  ),
-                  TextSpan(
-                    text: '\t\tLevente Polyak',
-                    style: normaltext1,
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              TextSpan(
+                text: 'Developer :',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\t\tThe Debian Project',
+                style: normaltext1,
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'OS family :',
-                    style: darktext3,
-                  ),
-                  TextSpan(
-                    text: '\t\tLinux',
-                    style: normaltext1,
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              TextSpan(
+                text: 'OS family :',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\t\tLinux',
+                style: normaltext1,
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Source model :',
-                    style: darktext3,
-                  ),
-                  TextSpan(
-                    text: '\t\tOpen-source',
-                    style: normaltext1,
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              TextSpan(
+                text: 'Source model :',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\t\tOpen-source',
+                style: normaltext1,
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Update method :',
-                    style: darktext3,
-                  ),
-                  TextSpan(
-                    text: '\t\tPacman',
-                    style: normaltext1,
-                  ),
-                ])),
-            const SizedBox(height: 10.0,),
+              TextSpan(
+                text: 'Update method :',
+                style: darktext3,
+              ),
+              TextSpan(
+                text:
+                    '\t\tLong-term support in stable edition, rolling release '
+                    'in unstable and testing editions',
+                style: normaltext1,
+              ),
+            ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             RichText(
                 text: const TextSpan(children: [
-                  TextSpan(
-                    text: 'Package Manager :',
-                    style: darktext3,
-                  ),
-                  TextSpan(
-                    text: '\t\tpacman, libalpm (back-end), Arch Build System',
-                    style: normaltext1,
-                  ),
-                ])),
-
+              TextSpan(
+                text: 'Package Manager :',
+                style: darktext3,
+              ),
+              TextSpan(
+                text: '\t\tdpkg',
+                style: normaltext1,
+              ),
+            ])),
           ],
         ),
       ),
