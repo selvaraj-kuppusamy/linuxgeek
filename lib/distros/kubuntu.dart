@@ -28,7 +28,7 @@ class _KubuntuState extends State<Kubuntu> {
         throw 'Could not launch $url';
       }
     }
-    final Uri kubuntuwebsite = Uri(scheme: 'https', host: 'www.archlinux.org');
+    final Uri kubuntuwebsite = Uri(scheme: 'https', host: 'www.akubuntu.org');
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color(0xffe6f2ff),
@@ -37,7 +37,7 @@ class _KubuntuState extends State<Kubuntu> {
             icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
             onPressed: () => Navigator.of(context).pop(),
           ),
-          title: const Text('Arch'),
+          title: const Text('Kubuntu'),
           centerTitle: true,
         ),
         body: ListView(
@@ -45,12 +45,12 @@ class _KubuntuState extends State<Kubuntu> {
           children: [
             orientation == Orientation.portrait
                 ? Image.asset(
-              'assets/distros/arch/archlinux.png',
+              'assets/distros/kubuntu/kubuntulogo.PNG',
               height: 200.0,
               width:width,
             )
                 : Image.asset(
-              'assets/distros/arch/archlinux.png',
+              'assets/distros/kubuntu/kubuntulogo.PNG',
               height: 200.0,
               width: width,
             ),
@@ -67,11 +67,11 @@ class _KubuntuState extends State<Kubuntu> {
                           }),
                         }),
                   const TextSpan(
-                    text: '\tis an independently developed, x86-64 general-purpose'
-                        ' Linux distribution that strives to provide the latest stable versions'
-                        ' of most software by following a rolling-release model. '
-                        'The default installation is a minimal base system, '
-                        'configured by the user to only add what is purposely required.',
+                    text: '\tis an official flavor of the Ubuntu operating system that uses '
+                        'the KDE Plasma Desktop instead of the GNOME desktop environment.'
+                        ' As part of the Ubuntu project, Kubuntu uses the same underlying systems.'
+                        ' Kubuntu shares the same repositories as Ubuntu '
+                        'and is released regularly on the same schedule as Ubuntu.',
                     style: normaltext1,
                   ),
                 ])),
@@ -83,7 +83,7 @@ class _KubuntuState extends State<Kubuntu> {
                     style: darktext3,
                   ),
                   TextSpan(
-                    text: '\t\tLevente Polyak',
+                    text: '\t\t	Community-driven, previously Blue Systems/Canonical Ltd.',
                     style: normaltext1,
                   ),
                 ])),
@@ -119,7 +119,7 @@ class _KubuntuState extends State<Kubuntu> {
                     style: darktext3,
                   ),
                   TextSpan(
-                    text: '\t\tPacman',
+                    text: '\t\tPackageKit or APT',
                     style: normaltext1,
                   ),
                 ])),
@@ -131,7 +131,7 @@ class _KubuntuState extends State<Kubuntu> {
                     style: darktext3,
                   ),
                   TextSpan(
-                    text: '\t\tpacman, libalpm (back-end), Arch Build System',
+                    text: '\t\tdpkg',
                     style: normaltext1,
                   ),
                 ])),
