@@ -51,7 +51,7 @@ class _UbuntuState extends State<Ubuntu> {
             )
                 : Image.asset(
               'assets/distros/ubuntu/ubuntulogo.png',
-              height: 250.0,
+              height: 200.0,
               width: width,
             ),
             const SizedBox(height: 10.0,),

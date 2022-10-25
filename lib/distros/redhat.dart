@@ -52,7 +52,7 @@ class _RedHatState extends State<RedHat> {
             )
                 : Image.asset(
               'assets/distros/redhat/redhatlogo.png',
-              height: 250.0,
+              height: 200.0,
               width: width,
             ),
             const SizedBox(height: 10.0,),

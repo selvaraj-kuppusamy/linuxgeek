@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:linuxgeek/distros/arch.dart';
 import 'package:linuxgeek/distros/centos.dart';
+import 'package:linuxgeek/distros/debian.dart';
+import 'package:linuxgeek/distros/kali.dart';
 import 'package:linuxgeek/distros/ubuntu.dart';
 
 import '../distros/redhat.dart';
@@ -125,7 +128,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Arch()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -155,7 +158,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Kali()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -185,7 +188,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Debian()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),

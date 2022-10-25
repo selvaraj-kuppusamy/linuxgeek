@@ -118,7 +118,7 @@ class _CentOSState extends State<CentOS> {
                     style: darktext3,
                   ),
                   TextSpan(
-                    text: '\t\t	Release Candidate',
+                    text: '\t\tRelease Candidate',
                     style: normaltext1,
                   ),
                 ])),
