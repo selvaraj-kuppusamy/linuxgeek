@@ -67,7 +67,7 @@ class _ManjaroState extends State<Manjaro> {
                           }),
                         }),
                   const TextSpan(
-                    text: '\ is a free and open-source Linux distribution based on the Arch Linux operating'
+                    text: '\tis a free and open-source Linux distribution based on the Arch Linux operating'
                         ' system that has a focus on user-friendliness and accessibility. '
                         'It uses a rolling release update model and Pacman as its package manager. '
                         'It is developed mainly in Austria, France and Germany.',

@@ -13,6 +13,7 @@ import 'package:linuxgeek/distros/manjaro.dart';
 import 'package:linuxgeek/distros/neptune.dart';
 import 'package:linuxgeek/distros/pclinuxos.dart';
 import 'package:linuxgeek/distros/puppy.dart';
+import 'package:linuxgeek/distros/pureos.dart';
 import 'package:linuxgeek/distros/slackel.dart';
 import 'package:linuxgeek/distros/solus.dart';
 import 'package:linuxgeek/distros/ubuntu.dart';
@@ -621,7 +622,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const PureOS()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -640,7 +641,7 @@ class _DistrosState extends State<Distros> {
                         width: 100.0,
                       ),
                       const Text(
-                        'PureOs',
+                        'PureOS',
                         style: TextStyle(
                             fontSize: 16.0, fontWeight: FontWeight.w700),
                       ),
