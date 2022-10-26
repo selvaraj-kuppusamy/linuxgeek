@@ -5,7 +5,9 @@ import 'package:linuxgeek/distros/bodhi.dart';
 import 'package:linuxgeek/distros/bunsenlabs.dart';
 import 'package:linuxgeek/distros/centos.dart';
 import 'package:linuxgeek/distros/debian.dart';
+import 'package:linuxgeek/distros/elementary.dart';
 import 'package:linuxgeek/distros/fedora.dart';
+import 'package:linuxgeek/distros/gentoo.dart';
 import 'package:linuxgeek/distros/kali.dart';
 import 'package:linuxgeek/distros/kubuntu.dart';
 import 'package:linuxgeek/distros/linuxmint.dart';
@@ -16,6 +18,7 @@ import 'package:linuxgeek/distros/netrunner.dart';
 import 'package:linuxgeek/distros/opensuse.dart';
 import 'package:linuxgeek/distros/parrot.dart';
 import 'package:linuxgeek/distros/pclinuxos.dart';
+import 'package:linuxgeek/distros/popos.dart';
 import 'package:linuxgeek/distros/puppy.dart';
 import 'package:linuxgeek/distros/pureos.dart';
 import 'package:linuxgeek/distros/slackel.dart';
@@ -838,7 +841,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Gentoo()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -868,7 +871,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                        MaterialPageRoute(builder: (context) => const Elementary()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -898,7 +901,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Popos()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
