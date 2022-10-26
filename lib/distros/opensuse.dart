@@ -20,7 +20,7 @@ class _OpensuseState extends State<Opensuse> {
     // var height = size.height;
     var width = size.width;
 
-    Future<void> arch(Uri url) async {
+    Future<void> opensuse(Uri url) async {
       if (!await launchUrl(
         url,
         mode: LaunchMode.externalApplication,
@@ -28,7 +28,7 @@ class _OpensuseState extends State<Opensuse> {
         throw 'Could not launch $url';
       }
     }
-    final Uri archwebsite = Uri(scheme: 'https', host: 'www.opensuse.org');
+    final Uri opensusewebsite = Uri(scheme: 'https', host: 'www.opensuse.org');
     return SafeArea(
       child: Scaffold(
         backgroundColor: const Color(0xffe6f2ff),
@@ -63,7 +63,7 @@ class _OpensuseState extends State<Opensuse> {
                       recognizer: TapGestureRecognizer()
                         ..onTap = () => {
                           setState(() {
-                            arch(archwebsite);
+                            opensuse(opensusewebsite);
                           }),
                         }),
                   const TextSpan(

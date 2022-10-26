@@ -14,10 +14,12 @@ import 'package:linuxgeek/distros/manjaro.dart';
 import 'package:linuxgeek/distros/neptune.dart';
 import 'package:linuxgeek/distros/netrunner.dart';
 import 'package:linuxgeek/distros/opensuse.dart';
+import 'package:linuxgeek/distros/parrot.dart';
 import 'package:linuxgeek/distros/pclinuxos.dart';
 import 'package:linuxgeek/distros/puppy.dart';
 import 'package:linuxgeek/distros/pureos.dart';
 import 'package:linuxgeek/distros/slackel.dart';
+import 'package:linuxgeek/distros/slackware.dart';
 import 'package:linuxgeek/distros/solus.dart';
 import 'package:linuxgeek/distros/ubuntu.dart';
 import 'package:linuxgeek/distros/xubuntu.dart';
@@ -776,7 +778,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Slackware()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
@@ -806,7 +808,7 @@ class _DistrosState extends State<Distros> {
               GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Ubuntu()));
+                      MaterialPageRoute(builder: (context) => const Parrot()));
                 },
                 child: Container(
                   padding: const EdgeInsets.all(20.0),
