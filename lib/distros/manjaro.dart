@@ -130,7 +130,7 @@ class _ManjaroState extends State<Manjaro> {
                     style: darktext3,
                   ),
                   TextSpan(
-                    text: '\t\tpacman, libalpm (back-end)',
+                    text: '\t\tPacman, libalpm (back-end)',
                     style: normaltext1,
                   ),
                 ])),
