@@ -27,8 +27,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
         throw 'Could not launch $url';
       }
     }
-
-    Future<void> virtualbox(Uri url) async {
+    Future<void> balenaetcher(Uri url) async {
       if (!await launchUrl(
         url,
         mode: LaunchMode.externalApplication,
@@ -38,8 +37,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
     }
 
     final Uri centoswebsite = Uri(scheme: 'https', host: 'www.centos.org');
-    final Uri virtualboxwebsite =
-        Uri(scheme: 'https', host: 'www.virtualbox.org');
+    final Uri balenaetcherboxwebsite =
+        Uri(scheme: 'https', host: 'www.balena.io');
 
     return SafeArea(
       child: Scaffold(
@@ -129,12 +128,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
                 style: normaltext1,
               ),
               TextSpan(
-                  text: 'Virtual Box',
+                  text: 'BalenaEtcher',
                   style: bluetext1,
                   recognizer: TapGestureRecognizer()
                     ..onTap = () => {
                           setState(() {
-                            virtualbox(virtualboxwebsite);
+                            balenaetcher(balenaetcherboxwebsite);
                           }),
                         }),
               const TextSpan(
