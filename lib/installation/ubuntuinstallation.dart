@@ -225,6 +225,18 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text('Step 2:-',style: darktext2,),
+            orientation == Orientation.portrait
+                ? Image.asset(
+              'assets/installation/ubuntuinstallation/1.PNG',
+              height: 210.0,
+              width:width,
+            )
+                : Image.asset(
+              'assets/installation/ubuntuinstallation/1.PNG',
+              height: 400.0,
+              width: width,
+            ),
             const Text(
               'Step 3:- Installing Ubuntu Server in Hardware',
               style: darktext2,
