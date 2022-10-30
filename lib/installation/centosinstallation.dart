@@ -274,7 +274,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             RichText(
                 text: const TextSpan(children: [
               TextSpan(
-                text: 'Press.',
+                text: 'Press',
                 style: normaltext1,
               ),
               TextSpan(

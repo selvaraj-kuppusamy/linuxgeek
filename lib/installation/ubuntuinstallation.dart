@@ -212,32 +212,83 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               'In my case, I choose Ubuntu 22.04 LTS.',
               style: normaltext1,
             ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Step 3:- Installing Ubuntu Server in Hardware',
+              style: darktext2,
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Now, you should select your preferred language. I’m using English.',style: normaltext1,),
+            const SizedBox(height: 5.0,),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(height: 10.0,),
+            orientation == Orientation.portrait
+                ? Image.asset(
+                    'assets/installation/ubuntuinstallation/2.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/ubuntuinstallation/2.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
 
             orientation == Orientation.portrait
                 ? Image.asset(
-                    'assets/installation/ubuntuinstallation/2.png',
+                    'assets/installation/ubuntuinstallation/3.png',
                     height: 250.0,
                     width: width,
                   )
                 : Image.asset(
-                    'assets/installation/ubuntuinstallation/2.png',
+                    'assets/installation/ubuntuinstallation/3.png',
                     height: 500.0,
                     width: width,
                   ),
             const SizedBox(
               height: 10.0,
             ),
-            orientation == Orientation.portrait
-                ? Image.asset(
-                    'assets/installation/ubuntuinstallation/3.png',
-                    height: 250.0,
-                    width: width,
-                  )
-                : Image.asset(
-                    'assets/installation/ubuntuinstallation/3.png',
-                    height: 500.0,
-                    width: width,
+            const Text('Now, Select a keyboard layout .As I’m using a English keyboard, '
+                'Ubuntu to detect my layout.',style: normaltext1,),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
                   ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
             const SizedBox(
               height: 10.0,
             ),
@@ -252,6 +303,29 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Now, Configure the Network Interface in Ubuntu Server. '
+                ' Choose default Network Interface option.'),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
             const SizedBox(
               height: 10.0,
             ),
