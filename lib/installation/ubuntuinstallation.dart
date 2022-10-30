@@ -254,21 +254,6 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-
-            orientation == Orientation.portrait
-                ? Image.asset(
-                    'assets/installation/ubuntuinstallation/3.png',
-                    height: 250.0,
-                    width: width,
-                  )
-                : Image.asset(
-                    'assets/installation/ubuntuinstallation/3.png',
-                    height: 500.0,
-                    width: width,
-                  ),
-            const SizedBox(
-              height: 10.0,
-            ),
             const Text('Now, Select a keyboard layout .As I’m using a English keyboard, '
                 'Ubuntu to detect my layout.',style: normaltext1,),
             const SizedBox(
@@ -294,6 +279,43 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             ),
             orientation == Orientation.portrait
                 ? Image.asset(
+                    'assets/installation/ubuntuinstallation/3.png',
+                    height: 250.0,
+                    width: width,
+                  )
+                : Image.asset(
+                    'assets/installation/ubuntuinstallation/3.png',
+                    height: 500.0,
+                    width: width,
+                  ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Now, Configure the Network Interface in Ubuntu Server. '
+                'In my case, Choose default Network Interface option.',style: normaltext1,),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
+            orientation == Orientation.portrait
+                ? Image.asset(
                     'assets/installation/ubuntuinstallation/4.png',
                     height: 250.0,
                     width: width,
@@ -306,8 +328,12 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('Now, Configure the Network Interface in Ubuntu Server. '
-                ' Choose default Network Interface option.'),
+            const Text('In case, if you are using a proxy, you may enter them here and Press done.'
+                ' If you don’t have a proxy that’s fine. You can leave it blank.',style: normaltext1,),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text('In my case don’t have a proxy. So I can leave it blank.',style: normaltext1,),
             const SizedBox(
               height: 5.0,
             ),
@@ -343,6 +369,27 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text('Configure the Ubuntu Archive mirror.You can configure the Ubuntu mirror of your choice. '
+                'In my case, just leaving the default.',style: normaltext1,),
+            const SizedBox(height: 5.0,),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/ubuntuinstallation/6.png',
@@ -354,6 +401,11 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('In the storage selection, Use an entire disk option and'
+                ' Custom storage layout option there.you can choose any one of the option.',style: normaltext1,),
             const SizedBox(
               height: 10.0,
             ),
@@ -371,6 +423,28 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            const Text('In my case, I choose Custom storage layout option.',style: normaltext1,),
+            const SizedBox(
+              height: 5.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/ubuntuinstallation/8.png',
@@ -385,6 +459,24 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Now, Press the Free space and press enter to Click',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tAdd GPT Partition',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: '.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/ubuntuinstallation/9.png',
@@ -396,6 +488,10 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     height: 500.0,
                     width: width,
                   ),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text('Now, Configure the disk.'),
             const SizedBox(
               height: 10.0,
             ),
