@@ -43,7 +43,38 @@ class _OverviewState extends State<Overview> {
         padding: const EdgeInsets.all(20),
         children: [
           const Text(
-            'Evolution of Linux',
+            'What is Linux?',
+            style: darktext1,
+          ),
+          const SizedBox(height: 5.0,),
+          RichText(
+              textAlign: TextAlign.justify,
+              text:  TextSpan(children: [
+                TextSpan(
+                  text: 'Linux',
+                  style: bluetext1,
+                    recognizer: TapGestureRecognizer()
+                      ..onTap = () => {
+                        setState(() {
+                          linux(linuxwebsite);
+                        }),
+                      }
+                ),
+                const TextSpan(
+                  text: ' is an open source operating system (OS). '
+                      'An operating system is the software that directly manages a '
+                      'system’s hardware and resources, like CPU, memory, and storage. '
+                      'The OS sits between applications and hardware and makes '
+                      'the connections between all of your software and the physical resources that do the work.',
+                  style: normaltext1,
+                ),
+              ])),
+
+          const SizedBox(
+            height: 5.0,
+          ),
+          const Text(
+              'History of Linux',
             style: darktext1,
           ),
           const SizedBox(
