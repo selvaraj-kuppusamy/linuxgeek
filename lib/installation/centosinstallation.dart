@@ -27,6 +27,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
         throw 'Could not launch $url';
       }
     }
+
     Future<void> balenaetcher(Uri url) async {
       if (!await launchUrl(
         url,
@@ -110,7 +111,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               '\u27A4\t 20GB free disk space.',
-              style: normaltext1,),
+              style: normaltext1,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -168,7 +170,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Step 1 :- Download CentOS Linux ISO',
-              style: darktext2,),
+              style: darktext2,
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -209,8 +212,10 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('In my case, I choose CentOS Stream Linux 9.',
-                style: normaltext1,),
+            const Text(
+              'In my case, I choose CentOS Stream Linux 9.',
+              style: normaltext1,
+            ),
 
             const SizedBox(
               height: 10.0,
@@ -265,9 +270,10 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             const Text(
-                'Now, The CentOS Linux installation process will be started.'
-                ' Use the up and down key to go to Install CentOS Linux.',
-                style: normaltext1,),
+              'Now, The CentOS Linux installation process will be started.'
+              ' Use the up and down key to go to Install CentOS Linux.',
+              style: normaltext1,
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -305,9 +311,10 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             const Text(
-                ' Install CentOS Linux is booted and testing the process.'
-                ' After, the window below will prompt you to select the installation language.',
-                style: normaltext1,),
+              ' Install CentOS Linux is booted and testing the process.'
+              ' After, the window below will prompt you to select the installation language.',
+              style: normaltext1,
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -427,7 +434,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Localization',
-              style: darktext2,),
+              style: darktext2,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -630,7 +638,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Language Support',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -741,7 +750,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software',
-              style: darktext1,),
+              style: darktext1,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -835,13 +845,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software Selection',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'The common installation types are:',
-              style: normaltext1,),
+              style: normaltext1,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -963,7 +975,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'System',
-              style: darktext2,),
+              style: darktext2,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1066,7 +1079,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'KDUMP',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1179,7 +1193,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Network and Hostname',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1187,7 +1202,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In the\t',
-                  style:normaltext1,
+                  style: normaltext1,
                 ),
                 TextSpan(
                   text: 'Network and Hostname',
@@ -1265,7 +1280,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Security Profile',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1319,13 +1335,15 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'User Settings',
-              style: darktext2,),
+              style: darktext2,
+            ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Root password',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1419,7 +1437,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'User Creation',
-              style: darktext4,),
+              style: darktext4,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1821,7 +1840,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
 
             const Text(
               'Check, CentOS version.',
-              style: normaltext1,),
+              style: normaltext1,
+            ),
             const SizedBox(
               height: 5.0,
             ),
@@ -1834,7 +1854,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'cat /etc/os-release',
-              style: commandtext1,),
+              style: commandtext1,
+            ),
             const SizedBox(
               height: 10.0,
             ),
@@ -1888,7 +1909,8 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'yum update',
-              style: commandtext1,),
+              style: commandtext1,
+            ),
             const SizedBox(
               height: 10.0,
             ),
