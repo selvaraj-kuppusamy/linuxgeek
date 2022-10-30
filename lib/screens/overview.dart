@@ -50,6 +50,7 @@ class _OverviewState extends State<Overview> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: TextSpan(children: [
             TextSpan(
                 text: 'Linux',
@@ -61,6 +62,7 @@ class _OverviewState extends State<Overview> {
                         }),
                       }),
             const TextSpan(
+
               text:
                   ', computer operating system created in the early 1990s by Finnish software engineer\t',
               style: normaltext1,
@@ -105,6 +107,7 @@ class _OverviewState extends State<Overview> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'While still a student at the University of Helsinki, '
@@ -133,7 +136,7 @@ class _OverviewState extends State<Overview> {
                     ' Stallman and the FSF started by creating utilities for the operating system first. '
                     'These utilities were then added to the Linux kernel to '
                     'create a complete system called GNU/Linux, or, less precisely, just Linux.',
-                style: normaltext1),
+                style: normaltext1,),
           ])),
           const SizedBox(
             height: 10.0,
@@ -146,7 +149,7 @@ class _OverviewState extends State<Overview> {
             height: 5.0,
           ),
           const Text('The architecture of Linux can be divided into four levels'
-              ' of functionality as shown in below figure:'),
+              ' of functionality as shown in below figure:',style: normaltext1,textAlign: TextAlign.justify,),
           const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -160,6 +163,35 @@ class _OverviewState extends State<Overview> {
                   width: width,
                 ),
           const SizedBox(height: 10.0,),
+          const Text('Hardware: ',style: middletext1,),
+          const Text('The hardware layer of Linux is made up of several'
+              ' peripheral devices such as a CPU, HDD, and RAM.',style: normaltext1,textAlign: TextAlign.justify,),
+          const SizedBox(height: 10.0,),
+          const Text('Kernel: ',style: middletext1,),
+          const Text('The kernel is the core part of the operating system,'
+              ' which is responsible for all the major activities of the LINUX operating system. '
+              'This operating system consists of different modules and interacts directly with '
+              'the underlying hardware. The kernel offers the required abstraction to hide application programs'
+              ' or low-level hardware details to the system.'
+              ' The types of Kernels are as follows:',style: normaltext1,textAlign: TextAlign.justify,),
+          const SizedBox(height: 5.0,),
+          const Text('1.Monolithic Kernel',style: normaltext1,),
+          const SizedBox(height: 2.0,),
+          const Text('2.Micro kernels',style: normaltext1,),
+          const SizedBox(height: 2.0,),
+          const Text('3.Exo kernels',style: normaltext1,),
+          const SizedBox(height: 2.0,),
+          const Text('4.Hybrid kernels',style: normaltext1,),
+          const SizedBox(height: 5.0,),
+          const Text('Shell: ',style: middletext1,),
+          const Text('It is an interface to the kernel which hides '
+              'the complexity of the kernel’s functions from the users. '
+              'It takes commands from the user and executes the kernel’s functions.',style: normaltext1,textAlign: TextAlign.justify,),
+          const SizedBox(height: 10.0,),
+          const Text('System Utility: ',style: middletext1,),
+          const Text('These are the utility programs which runs on Shell. '
+              'This can be any application like Your web browser, media player, text editor etc.'
+          ,style: normaltext1,textAlign: TextAlign.justify,)
 
         ],
       ),

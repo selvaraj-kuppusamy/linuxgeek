@@ -59,6 +59,7 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
               TextSpan(
                   text: 'Pop!_OS',
@@ -81,13 +82,14 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Developer :',
                 style: darktext3,
               ),
               TextSpan(
-                text: '\t\t	System76',
+                text: '\t\tSystem76',
                 style: normaltext1,
               ),
             ])),
@@ -95,6 +97,7 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'OS family :',
@@ -109,6 +112,7 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Source model :',
@@ -123,6 +127,7 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Update method :',
@@ -137,6 +142,7 @@ class _PoposState extends State<Popos> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Package Manager :',

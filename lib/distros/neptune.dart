@@ -56,6 +56,7 @@ class _NeptuneState extends State<Neptune> {
             ),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'Neptune',

@@ -56,6 +56,7 @@ class _PureOSState extends State<PureOS> {
             ),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'PureOS',
@@ -75,6 +76,7 @@ class _PureOSState extends State<PureOS> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Developer :',
@@ -87,6 +89,7 @@ class _PureOSState extends State<PureOS> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'OS family :',
@@ -99,6 +102,7 @@ class _PureOSState extends State<PureOS> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Source model :',
@@ -111,6 +115,7 @@ class _PureOSState extends State<PureOS> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Update method :',
@@ -123,6 +128,7 @@ class _PureOSState extends State<PureOS> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Package Manager :',

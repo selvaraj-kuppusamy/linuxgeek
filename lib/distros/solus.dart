@@ -56,6 +56,7 @@ class _SolusState extends State<Solus> {
             ),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'Solus',
@@ -76,6 +77,7 @@ class _SolusState extends State<Solus> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Developer :',
@@ -89,6 +91,7 @@ class _SolusState extends State<Solus> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'OS family :',
@@ -101,6 +104,7 @@ class _SolusState extends State<Solus> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Source model :',
@@ -113,6 +117,7 @@ class _SolusState extends State<Solus> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Update method :',
@@ -125,6 +130,7 @@ class _SolusState extends State<Solus> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Package Manager :',

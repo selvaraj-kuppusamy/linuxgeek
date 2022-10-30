@@ -59,6 +59,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
               TextSpan(
                   text: 'Debian',
@@ -81,6 +82,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Developer :',
@@ -95,6 +97,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'OS family :',
@@ -109,6 +112,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Source model :',
@@ -123,6 +127,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Update method :',
@@ -139,6 +144,7 @@ class _DebianState extends State<Debian> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Package Manager :',

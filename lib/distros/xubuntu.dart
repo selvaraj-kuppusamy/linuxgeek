@@ -56,6 +56,7 @@ class _XubuntuState extends State<Xubuntu> {
             ),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'Xubuntu',
@@ -76,6 +77,7 @@ class _XubuntuState extends State<Xubuntu> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Developer :',
@@ -88,6 +90,7 @@ class _XubuntuState extends State<Xubuntu> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'OS family :',
@@ -100,6 +103,7 @@ class _XubuntuState extends State<Xubuntu> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Source model :',
@@ -112,6 +116,7 @@ class _XubuntuState extends State<Xubuntu> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Update method :',
@@ -124,6 +129,7 @@ class _XubuntuState extends State<Xubuntu> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Package Manager :',

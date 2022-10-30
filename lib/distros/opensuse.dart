@@ -56,6 +56,7 @@ class _OpensuseState extends State<Opensuse> {
             ),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
                   TextSpan(
                       text: 'OpenSUSE',
@@ -74,6 +75,7 @@ class _OpensuseState extends State<Opensuse> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Developer :',
@@ -86,6 +88,7 @@ class _OpensuseState extends State<Opensuse> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'OS family :',
@@ -98,6 +101,7 @@ class _OpensuseState extends State<Opensuse> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Source model :',
@@ -110,6 +114,7 @@ class _OpensuseState extends State<Opensuse> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Update method :',
@@ -122,6 +127,7 @@ class _OpensuseState extends State<Opensuse> {
                 ])),
             const SizedBox(height: 10.0,),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
                   TextSpan(
                     text: 'Package Manager :',

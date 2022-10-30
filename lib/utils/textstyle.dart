@@ -39,3 +39,5 @@ const commandtext1 = TextStyle(
   fontWeight: FontWeight.w300,
   color: Colors.black,
 );
+
+const middletext1 = TextStyle(fontWeight: FontWeight.w900, fontSize: 16,color: Colors.black);
