@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../main.dart';
+import '../screens/about.dart';
+import '../screens/commands.dart';
+import '../screens/distros.dart';
+import '../screens/installation.dart';
+
 class Sidebar extends StatefulWidget {
   const Sidebar({Key? key}) : super(key: key);
 
@@ -40,7 +46,10 @@ class _SidebarState extends State<Sidebar> {
               leading: const Icon(Icons.home),
               title: const Text("Home"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Linux()),
+                );
               },
             ),
             const Divider(),
@@ -48,7 +57,10 @@ class _SidebarState extends State<Sidebar> {
               leading: const Icon(Icons.hub_sharp),
               title: const Text("Linux Distros"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Distros()),
+                );
               },
             ),
             const Divider(),
@@ -56,7 +68,21 @@ class _SidebarState extends State<Sidebar> {
               leading: const Icon(Icons.code),
               title: const Text("Command List"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Commands()),
+                );
+              },
+            ),
+            const Divider(),
+            ListTile(
+              leading: const Icon(Icons.install_desktop),
+              title: const Text("Installation"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Installation()),
+                );
               },
             ),
             const Divider(),
@@ -64,17 +90,13 @@ class _SidebarState extends State<Sidebar> {
               leading: const Icon(Icons.info),
               title: const Text("About App"),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const About()),
+                );
               },
             ),
-            const Divider(),
-            ListTile(
-              leading: const Icon(Icons.contacts),
-              title: const Text("Contact Us"),
-              onTap: () {
-                Navigator.pop(context);
-              },
-            ),
+
           ],
         ),
       ),
