@@ -10,7 +10,7 @@ class Commands extends StatefulWidget {
 class _CommandsState extends State<Commands> {
   @override
   Widget build(BuildContext context) {
-   // var orientation = MediaQuery.of(context).orientation;
+    var orientation = MediaQuery.of(context).orientation;
     //size of the window
     var size = MediaQuery.of(context).size;
     // var height = size.height;
@@ -30,6 +30,7 @@ class _CommandsState extends State<Commands> {
     ];
     return  SafeArea(
       child: Scaffold(
+        backgroundColor: const Color(0xffe6f2ff),
         appBar: AppBar(
           leading: IconButton(
             icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
@@ -41,26 +42,71 @@ class _CommandsState extends State<Commands> {
         body: ListView(
           padding: const EdgeInsets.all(20.0),
           children: [
-            Container(
-              height: 200,
-              color: Colors.yellow,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children:  [
-                  const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
-                  const SizedBox(height: 5.0,),
-                  const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
-                  const SizedBox(height: 5.0,),
-                  const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
-                  const SizedBox(height: 5.0,),
-                  const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
-                  const SizedBox(height: 5.0,),
-                  const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
-                  const SizedBox(height: 5.0,),
-                  Image.asset('assets/commands/pwd.PNG')
-                ],
+            orientation == Orientation.portrait?
+            GridView.builder(
+              physics: const NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount:1,
+                mainAxisSpacing: 20.0,
+                childAspectRatio: 2.0,
               ),
-            )
+              itemCount: comandname.length,
+              itemBuilder: (BuildContext context, int index) {
+                return SizedBox(
+                  height: 200,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children:  [
+                      const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      Image.asset('assets/commands/pwd.PNG')
+                    ],
+                  ),
+                );
+              },
+
+            ):
+            GridView.builder(
+              physics: const NeverScrollableScrollPhysics(),
+              shrinkWrap: true,
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount:1,
+                mainAxisSpacing: 20.0,
+                childAspectRatio: 4.0,
+              ),
+              itemCount: comandname.length,
+              itemBuilder: (BuildContext context, int index) {
+                return SizedBox(
+                  height: 200,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children:  [
+                      const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
+                      const SizedBox(height: 5.0,),
+                      Image.asset('assets/commands/pwd.PNG')
+                    ],
+                  ),
+                );
+              },
+
+            ),
           ],
         ),
 
