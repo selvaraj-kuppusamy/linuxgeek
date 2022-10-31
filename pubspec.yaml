@@ -65,6 +65,7 @@ flutter:
     - assets/icon/
     - assets/homepage/
     - assets/overview/
+    - assets/commands/
     #installation folder
     - assets/installation/
     - assets/installation/centosinstallation/

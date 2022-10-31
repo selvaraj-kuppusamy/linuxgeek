@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:linuxgeek/utils/textstyle.dart';
 class Commands extends StatefulWidget {
   const Commands({Key? key}) : super(key: key);
 
@@ -26,15 +27,21 @@ class _CommandsState extends State<Commands> {
           centerTitle: true,
         ),
         body: ListView(
+          padding: const EdgeInsets.all(20.0),
           children: [
             Container(
               height: 200,
               color: Colors.yellow,
               child: Column(
-                children: [
-                  Text('Man'),
-                  SizedBox(height: 10.0,),
-                  Text('')
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children:  [
+                  const SizedBox(height: 10.0,),
+                  const Text('pwd Command',style: darktext3,),
+                  const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,),
+                  const Text('Syntax:',style: darktext3,),
+                  const Text('Pwd',style: commandtext1,),
+                  const Text('Output:',style: darktext3,),
+                   Image.asset('assets/commands/pwd.PNG')
                 ],
               ),
             )
