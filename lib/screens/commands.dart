@@ -16,6 +16,18 @@ class _CommandsState extends State<Commands> {
     // var height = size.height;
     var width = size.width;
 
+    List comandname =[
+      'Pwd commnad',
+      'Pwd commnad',
+    ];
+    List commandexplanation =[
+      'The pwd command is used to display the location of the current working directory.',
+      'The pwd command is used to display the location of the current working directory.',
+    ];
+    List commandphoto = [
+      'assets/commands/pwd.PNG',
+      'assets/commands/pwd.PNG',
+    ];
     return  SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -35,13 +47,17 @@ class _CommandsState extends State<Commands> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:  [
-                  const SizedBox(height: 10.0,),
-                  const Text('pwd Command',style: darktext3,),
-                  const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,),
-                  const Text('Syntax:',style: darktext3,),
-                  const Text('Pwd',style: commandtext1,),
-                  const Text('Output:',style: darktext3,),
-                   Image.asset('assets/commands/pwd.PNG')
+                  const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
+                  const SizedBox(height: 5.0,),
+                  const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
+                  const SizedBox(height: 5.0,),
+                  const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
+                  const SizedBox(height: 5.0,),
+                  const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
+                  const SizedBox(height: 5.0,),
+                  const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
+                  const SizedBox(height: 5.0,),
+                  Image.asset('assets/commands/pwd.PNG')
                 ],
               ),
             )
