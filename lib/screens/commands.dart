@@ -17,20 +17,38 @@ class _CommandsState extends State<Commands> {
     //var width = size.width;
 
     List comandname =[
-      'Pwd commnad',
-      'Pwd commnad',
+      'Pwd commnand',
+      'mkdir Command',
+      'rmdir Command',
+      'ls Command',
+      'touch Command',
+      'cat command'
+
     ];
     List commandexplanation =[
       'The pwd command is used to display the location of the current working directory.',
-      'The pwd command is used to display the location of the current working directory.',
+      'The mkdir command is used to create a new directory under any directory.',
+      'The rmdir command is used to delete a directory.',
+      'The ls command is used to display a list of content of a directory.',
+      'The touch command is used to create empty files.',
+      'cat command is used to concatenate files and print on the standard output.'
+
     ];
     List commandsyntax = [
       'pwd',
-      'pwd'
+      'mkdir <directory name>',
+      'rmdir <directory name>',
+      'ls',
+      'touch <file name>',
+      'cat <file name>',
     ];
     List commandphoto = [
       'assets/commands/pwd.PNG',
-      'assets/commands/pwd.PNG',
+      'assets/commands/mkdir.PNG',
+      'assets/commands/rmdir.PNG',
+      'assets/commands/ls.PNG',
+      'assets/commands/touch.PNG',
+      'assets/commands/cat.PNG',
     ];
     return  SafeArea(
       child: Scaffold(
@@ -53,7 +71,7 @@ class _CommandsState extends State<Commands> {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount:1,
                 mainAxisSpacing: 20.0,
-                childAspectRatio: 2.0,
+                childAspectRatio: 1.9,
               ),
               itemCount: comandname.length,
               itemBuilder: (BuildContext context, int index) {
@@ -92,7 +110,7 @@ class _CommandsState extends State<Commands> {
               itemCount: comandname.length,
               itemBuilder: (BuildContext context, int index) {
                 return SizedBox(
-                  height: 200,
+                  height: 300,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:  [
