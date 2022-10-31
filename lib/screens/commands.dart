@@ -12,9 +12,9 @@ class _CommandsState extends State<Commands> {
   Widget build(BuildContext context) {
     var orientation = MediaQuery.of(context).orientation;
     //size of the window
-    var size = MediaQuery.of(context).size;
+    //var size = MediaQuery.of(context).size;
     // var height = size.height;
-    var width = size.width;
+    //var width = size.width;
 
     List comandname =[
       'Pwd commnad',
@@ -23,6 +23,10 @@ class _CommandsState extends State<Commands> {
     List commandexplanation =[
       'The pwd command is used to display the location of the current working directory.',
       'The pwd command is used to display the location of the current working directory.',
+    ];
+    List commandsyntax = [
+      'pwd',
+      'pwd'
     ];
     List commandphoto = [
       'assets/commands/pwd.PNG',
@@ -58,17 +62,19 @@ class _CommandsState extends State<Commands> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:  [
-                      const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
+                       Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
+                       Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
                       const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
+                       Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
                       const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      Image.asset('assets/commands/pwd.PNG')
+                      Image.asset(
+                        commandphoto[index].toString(),
+                      ),
                     ],
                   ),
                 );
@@ -90,17 +96,19 @@ class _CommandsState extends State<Commands> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children:  [
-                      const Text('pwd Command',style: darktext3,textAlign: TextAlign.justify,),
+                       Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      const Text('The pwd command is used to display the location of the current working directory.',style: normaltext1,textAlign: TextAlign.justify,),
+                       Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
                       const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      const Text('Pwd',style: commandtext1,textAlign: TextAlign.justify,),
+                       Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
                       const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
                       const SizedBox(height: 5.0,),
-                      Image.asset('assets/commands/pwd.PNG')
+                      Image.asset(
+                        commandphoto[index].toString(),
+                      ),
                     ],
                   ),
                 );
