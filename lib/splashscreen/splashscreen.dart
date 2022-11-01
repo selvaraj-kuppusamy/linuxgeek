@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-        const Duration(seconds: 3),
+        const Duration(seconds: 10),
             () => {
           Navigator.pushReplacement(context,
               MaterialPageRoute(builder: (context) => const Linux())),
@@ -41,8 +41,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 )
                     : Image.asset(
                   'assets/splashscreen/splashscreen.png',
-                  height: 30.0,
-                  width: 40.0,
+                  height: 300.0,
+                  width: 300.0,
                 ),
               ],
             ),

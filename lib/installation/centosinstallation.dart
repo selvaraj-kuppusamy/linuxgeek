@@ -229,7 +229,26 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('Step 2:-',style: darktext2,),
+            const Text('Step 2:- Create Bootable USB Drive on CentOS Linux',style: darktext2,),
+            const SizedBox(height: 5.0),
+            const Text('The balenaEtcher utility launches. Plug in the USB drive –'
+                ' you should see the drive pop up in the device field.',style: normaltext1,),
+            const Text(
+              '\u27A4\t In the Flash from file, click Disk or ISO Image.',
+              style: normaltext1,),
+            const SizedBox(height: 5.0,),
+            const Text(
+              '\u27A4\t Browse and select the .iso CentOS Linux file you downloaded earlier.',
+              style: normaltext1,),
+            const SizedBox(height: 5.0,),
+            const Text(
+              '\u27A4\t Select Target USB as the device you wish to write to.',
+              style: normaltext1,),
+            const SizedBox(height: 5.0,),
+            const Text(
+              '\u27A4\t Click the Flash button to the Flash.',
+              style: normaltext1,),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/centosinstallation/1.PNG',
@@ -241,6 +260,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 400.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             const Text(
               'Step 3:- Installing CentOS in Hardware',
               style: darktext2,
@@ -337,7 +357,10 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-
+            const  Text('Centos Linux are Still booting...'),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/centosinstallation/4.png',

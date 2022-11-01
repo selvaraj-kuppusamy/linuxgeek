@@ -970,6 +970,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 5.0,
+          ),
+          const  Text('Red Hat Enterprise Linux are Still booting...'),
+          const SizedBox(
+            height: 5.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/18.png',
@@ -2653,6 +2660,10 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const Text(
+            'Overview also User Settings.',
+            style: normaltext1,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/45.png',

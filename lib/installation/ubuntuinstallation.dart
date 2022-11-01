@@ -225,18 +225,56 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('Step 2:-',style: darktext2,),
+            const Text(
+              'Step 2:- Create Bootable USB Drive on Ubuntu Server',
+              style: darktext2,
+            ),
+            const SizedBox(height: 5.0),
+            const Text(
+              'The balenaEtcher utility launches. Plug in the USB drive –'
+              ' you should see the drive pop up in the device field.',
+              style: normaltext1,
+            ),
+            const Text(
+              '\u27A4\t In the Flash from file, click Disk or ISO Image.',
+              style: normaltext1,
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Browse and select the .iso Ubuntu Server file you downloaded earlier.',
+              style: normaltext1,
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Select Target USB as the device you wish to write to.',
+              style: normaltext1,
+            ),
+            const SizedBox(
+              height: 5.0,
+            ),
+            const Text(
+              '\u27A4\t Click the Flash button to the Flash.',
+              style: normaltext1,
+            ),
+            const SizedBox(
+              height: 10.0,
+            ),
             orientation == Orientation.portrait
                 ? Image.asset(
-              'assets/installation/ubuntuinstallation/1.PNG',
-              height: 210.0,
-              width:width,
-            )
+                    'assets/installation/ubuntuinstallation/1.PNG',
+                    height: 210.0,
+                    width: width,
+                  )
                 : Image.asset(
-              'assets/installation/ubuntuinstallation/1.PNG',
-              height: 400.0,
-              width: width,
-            ),
+                    'assets/installation/ubuntuinstallation/1.PNG',
+                    height: 400.0,
+                    width: width,
+                  ),
+            const SizedBox(height: 10.0,),
             const Text(
               'Step 3:- Installing Ubuntu Server in Hardware',
               style: darktext2,
@@ -244,6 +282,81 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
             const SizedBox(
               height: 10.0,
             ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Connect the',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tUSB flash\t',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: 'drive to a PC. Turn on the PC and press the key'
+                        ' that opens the boot-device selection menu for the computer such as the,',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEsc/F9/F10/F12\t',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text:
+                    ' keys. Select the option that boots the PC from the USB flash drive.',
+                    style: normaltext1,
+                  ),
+                ])),
+            const SizedBox(
+              height: 10.0,
+            ),
+            const Text(
+              'Now, The Ubuntu Server installation process will be started.'
+                  ' Use the up and down key to go to Install Ubuntu Server.',
+              style: normaltext1,),
+            const SizedBox(
+              height: 10.0,
+            ),
+            RichText(
+                text: const TextSpan(children: [
+                  TextSpan(
+                    text: 'Press',
+                    style: normaltext1,
+                  ),
+                  TextSpan(
+                    text: '\tEnter\t',
+                    style: darktext3,
+                  ),
+                  TextSpan(
+                    text: 'key.',
+                    style: normaltext1,
+                  ),
+                ])),
+            orientation == Orientation.portrait
+                ? Image.asset(
+              'assets/installation/ubuntuinstallation/1.1.PNG',
+              height: 200.0,
+              width: width,
+            )
+                : Image.asset(
+              'assets/installation/ubuntuinstallation/1.1.PNG',
+              height: 345.0,
+              width: width,
+            ),
+            const  Text('Ubuntu Server is booting...'),
+            const SizedBox(height: 10.0,),
+            orientation == Orientation.portrait
+                ? Image.asset(
+              'assets/installation/ubuntuinstallation/1.2.PNG',
+              height: 250.0,
+              width: width,
+            )
+                : Image.asset(
+              'assets/installation/ubuntuinstallation/1.2.PNG',
+              height: 500.0,
+              width: width,
+            ),
+            const SizedBox(height: 10.0,),
             const Text(
               'Now, you should select your preferred language. I’m using English.',
               style: normaltext1,
