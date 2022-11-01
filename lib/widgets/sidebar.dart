@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../main.dart';
 import '../screens/about.dart';
 import '../screens/commands.dart';
 import '../screens/distros.dart';
+import '../screens/home.dart';
 import '../screens/installation.dart';
 
 class Sidebar extends StatefulWidget {
