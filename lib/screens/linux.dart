@@ -49,7 +49,40 @@ class _WhylinuxState extends State<Whylinux> {
                    style: normaltext1,textAlign: TextAlign.justify,),
                SizedBox(height: 10.0,),
                Text('5. An entirely trouble-free operating system does not cause viruses,'
-                   ' spyware, or computer slowdown.',style: normaltext1,textAlign: TextAlign.justify,)
+                   ' spyware, or computer slowdown.',style: normaltext1,textAlign: TextAlign.justify,),
+               SizedBox(height: 20.0,),
+            Text(
+              'Linux Features',
+              style: darktext1,textAlign: TextAlign.justify,
+            ),
+             SizedBox(
+              height: 10.0,
+            ),
+            Text('Open-source:', style: middletext1,textAlign: TextAlign.justify,),
+            SizedBox(
+              height: 5.0,
+            ),
+            Text(' Multiple users can access the same system resources '
+                'like memory, hard disk, etc. But they have to use different terminals to operate.',style: normaltext1, textAlign: TextAlign.justify,),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('Multitasking:', style: middletext1,textAlign: TextAlign.justify,),
+            SizedBox(
+              height: 5.0,
+            ),
+            Text('More than one function can be performed simultaneously '
+                'by dividing the CPU time intelligently.',style: normaltext1,textAlign: TextAlign.justify,),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('Portability:', style: middletext1,textAlign: TextAlign.justify,),
+            SizedBox(
+              height: 5.0,
+            ),
+            Text('More than one function can be performed simultaneously '
+                'by dividing the CPU time intelligently.',style: normaltext1,textAlign: TextAlign.justify,),
+
           ],
         ),
       ),
