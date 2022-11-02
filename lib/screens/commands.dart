@@ -12,9 +12,9 @@ class _CommandsState extends State<Commands> {
   Widget build(BuildContext context) {
     var orientation = MediaQuery.of(context).orientation;
     //size of the window
-    //var size = MediaQuery.of(context).size;
-    // var height = size.height;
-    //var width = size.width;
+    var size = MediaQuery.of(context).size;
+     var height = size.height;
+    var width = size.width;
 
     List comandname =[
       'Pwd commnand',
@@ -61,79 +61,77 @@ class _CommandsState extends State<Commands> {
           title: const Text('Commands'),
           centerTitle: true,
         ),
-        body: ListView(
-          padding: const EdgeInsets.all(20.0),
-          children: [
-            orientation == Orientation.portrait?
-            GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount:1,
-                mainAxisSpacing: 20.0,
-                childAspectRatio: 1.9,
-              ),
-              itemCount: comandname.length,
-              itemBuilder: (BuildContext context, int index) {
-                return SizedBox(
-                  height: 200,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children:  [
-                       Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                       Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                       Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      Image.asset(
-                        commandphoto[index].toString(),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                orientation == Orientation.portrait?
+                ListView.separated(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: comandname.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: height*0.3,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:  [
+                           Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                           Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                           Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          Image.asset(
+                            commandphoto[index].toString(),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                );
-              },
+                    );
+                  }, separatorBuilder: (BuildContext context, int index) {
+                    return const SizedBox(height: 10.0,);
+                },
 
-            ):
-            GridView.builder(
-              physics: const NeverScrollableScrollPhysics(),
-              shrinkWrap: true,
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount:1,
-                mainAxisSpacing: 20.0,
-                childAspectRatio: 4.0,
-              ),
-              itemCount: comandname.length,
-              itemBuilder: (BuildContext context, int index) {
-                return SizedBox(
-                  height: 300,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children:  [
-                       Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                       Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                       Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
-                      const SizedBox(height: 5.0,),
-                      Image.asset(
-                        commandphoto[index].toString(),
+                ):
+                ListView.separated(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: comandname.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: height*0.5,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children:  [
+                           Text(comandname[index],style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                           Text(commandexplanation[index],style: normaltext1,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          const Text('Syntax:',style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                           Text(commandsyntax[index],style: commandtext1,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          const Text('Output:',style: darktext3,textAlign: TextAlign.justify,),
+                          const SizedBox(height: 5.0,),
+                          Image.asset(
+                            commandphoto[index].toString(),
+                          ),
+                        ],
                       ),
-                    ],
-                  ),
-                );
-              },
+                    );
+                  }, separatorBuilder: (BuildContext context, int index) {
+                    return const SizedBox(height: 10.0,);
+                },
 
+                ),
+              ],
             ),
-          ],
+          ),
         ),
 
       ),
