@@ -22,7 +22,8 @@ class _CommandsState extends State<Commands> {
       'rmdir Command',
       'ls Command',
       'touch Command',
-      'cat command'
+      'cat command',
+      'man command'
 
     ];
     List commandexplanation =[
@@ -31,7 +32,8 @@ class _CommandsState extends State<Commands> {
       'The rmdir command is used to delete a directory.',
       'The ls command is used to display a list of content of a directory.',
       'The touch command is used to create empty files.',
-      'cat command is used to concatenate files and print on the standard output.'
+      'cat command is used to concatenate files and print on the standard output.',
+      'man command is used to manage the product'
 
     ];
     List commandsyntax = [
@@ -41,6 +43,7 @@ class _CommandsState extends State<Commands> {
       'ls',
       'touch <file name>',
       'cat <file name>',
+      'man'
     ];
     List commandphoto = [
       'assets/commands/pwd.PNG',
@@ -49,6 +52,7 @@ class _CommandsState extends State<Commands> {
       'assets/commands/ls.PNG',
       'assets/commands/touch.PNG',
       'assets/commands/cat.PNG',
+      'assets/commands/man.png'
     ];
     return  SafeArea(
       child: Scaffold(
@@ -72,8 +76,8 @@ class _CommandsState extends State<Commands> {
                   shrinkWrap: true,
                   itemCount: comandname.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return SizedBox(
-                      height: height*0.3,
+                    return ConstrainedBox(
+                      constraints: const BoxConstraints(minHeight: 150),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  [
@@ -103,8 +107,8 @@ class _CommandsState extends State<Commands> {
                   shrinkWrap: true,
                   itemCount: comandname.length,
                   itemBuilder: (BuildContext context, int index) {
-                    return SizedBox(
-                      height: height*0.5,
+                    return ConstrainedBox(
+                      constraints: const BoxConstraints(minHeight: 150),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:  [
@@ -125,7 +129,7 @@ class _CommandsState extends State<Commands> {
                       ),
                     );
                   }, separatorBuilder: (BuildContext context, int index) {
-                    return const SizedBox(height: 10.0,);
+                    return const SizedBox(height: 20.0,);
                 },
 
                 ),
