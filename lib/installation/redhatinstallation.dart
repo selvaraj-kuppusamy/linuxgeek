@@ -89,12 +89,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 )
               : Image.asset(
                   'assets/installation/redhatinstallation/redhat.png',
-                  height: 260.0,
+                  height: 200.0,
                   width: width,
                 ),
-          const SizedBox(
-            height: 5.0,
-          ),
           const Text(
             'Red Hat Enterprise Linux',
             style: darktext2,
@@ -295,7 +292,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/2.png',
@@ -307,6 +306,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 90.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Name the Operating System name.choose Machine Folder, Type and Version.',
             style: normaltext1,
@@ -329,6 +331,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/3.png',
@@ -341,7 +346,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           RichText(
               text: const TextSpan(children: [
@@ -407,7 +412,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             ),
           ])),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -421,7 +426,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           RichText(
               text: const TextSpan(children: [
@@ -457,7 +462,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             ),
           ])),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -470,7 +475,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 500.0,
                   width: width,
                 ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -505,7 +512,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             ),
           ])),
           const SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -519,7 +526,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
 
           RichText(
@@ -555,6 +562,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/7.png',
@@ -566,6 +576,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 450.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Select File Location and Size.',
             style: normaltext1,
@@ -615,6 +628,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/8.png',
@@ -626,11 +642,16 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 480.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Now, new virtual machine has been successfully created.',
             style: normaltext1,
           ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/9.png',
@@ -642,6 +663,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 100.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Step 3:- Setting Up the Virtual Machine for RHEL',
             style: darktext2,
@@ -664,6 +688,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/10.PNG',
@@ -675,6 +702,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 100.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'In the general option, choose Advanced tab.',
             style: normaltext1,
@@ -706,7 +736,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'It is used to copy and paste some content between the virtual machine and the host.',
             style: normaltext1,
           ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/11.png',
@@ -718,6 +750,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 550.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'After clicking on the storage, we will attach the Red Hat Enterprise Linux 9 '
             'ISO file to our operating system.',
@@ -767,7 +802,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/12.png',
@@ -779,6 +816,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 550.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -821,7 +861,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             ),
           ])),
           const SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -835,7 +875,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 15.0,
+            height: 10.0,
           ),
           const Text(
             'Now, Red Hat Enterprise Linux 9 image file was selected.',
@@ -859,6 +899,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/14.png',
@@ -870,6 +913,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 550.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Step 4:- Installing RHEL in VirtualBox',
             style: darktext2,
@@ -920,6 +966,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 570.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Now, use the up and down key to go to Install Red Hat Enterprise Linux.',
             style: normaltext1,
@@ -942,7 +991,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/16.png',
@@ -954,11 +1005,17 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 570.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Red Hat Enterprise Linux is booted and testing the process.After, '
             'the window below will prompt you to select the installation language.',
             style: normaltext1,
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/17.png',
@@ -971,11 +1028,11 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   width: width,
                 ),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           const  Text('Red Hat Enterprise Linux are Still booting...'),
           const SizedBox(
-            height: 5.0,
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -988,6 +1045,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1022,7 +1082,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/19.png',
@@ -1034,6 +1096,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1049,6 +1114,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/20.png',
@@ -1060,6 +1128,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Localization',
             style: darktext2,
@@ -1129,7 +1200,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/21.png',
@@ -1141,6 +1214,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1174,6 +1250,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/22.png',
@@ -1185,6 +1264,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1226,6 +1308,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/23.png',
@@ -1237,6 +1322,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Language Support',
             style: darktext4,
@@ -1285,6 +1373,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/24.png',
@@ -1296,6 +1387,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Time and Date',
             style: darktext4,
@@ -1325,6 +1419,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/25.png',
@@ -1336,6 +1433,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Software',
             style: darktext2,
@@ -1406,6 +1506,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/26.png',
@@ -1417,7 +1520,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Installation Source',
             style: darktext4,
@@ -1486,6 +1591,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/27.png',
@@ -1497,6 +1605,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Software Selection',
             style: darktext4,
@@ -1610,7 +1721,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/28.png',
@@ -1622,6 +1735,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Installation Destination',
             style: darktext4,
@@ -1687,6 +1803,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/29.png',
@@ -1698,6 +1817,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1731,6 +1853,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/30.png',
@@ -1742,6 +1867,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1813,6 +1941,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'You will create partitions based on your purposes and disk size.',
             style: normaltext1,
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/31.png',
@@ -1824,6 +1955,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Boot partition',
             style: darktext4,
@@ -1880,7 +2014,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/32.png',
@@ -1892,6 +2028,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -1915,7 +2054,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/33.png',
@@ -1927,6 +2068,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Root partition',
             style: darktext4,
@@ -1983,7 +2127,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/34.png',
@@ -1995,6 +2141,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -2018,6 +2167,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/35.png',
@@ -2029,6 +2181,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Swap partition',
             style: darktext4,
@@ -2085,7 +2240,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/36.png',
@@ -2097,6 +2254,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -2156,6 +2316,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/37.png',
@@ -2167,6 +2330,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
               text: const TextSpan(children: [
             TextSpan(
@@ -2200,6 +2366,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               style: normaltext1,
             ),
           ])),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/38.png',
@@ -2211,6 +2380,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'KDUMP',
             style: darktext4,
@@ -2293,6 +2465,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/39.png',
@@ -2304,6 +2479,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Network and Hostname',
             style: darktext4,
@@ -2355,6 +2533,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/40.png',
@@ -2366,6 +2547,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Security Profile',
             style: darktext4,
@@ -2404,6 +2588,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/41.png',
@@ -2415,6 +2602,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Root password',
             style: darktext4,
@@ -2492,6 +2682,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/42.png',
@@ -2503,6 +2696,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'User Creation',
             style: darktext4,
@@ -2588,6 +2784,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/43.png',
@@ -2599,6 +2798,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
             text: const TextSpan(children: [
               TextSpan(
@@ -2649,6 +2851,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/44.png',
@@ -2660,9 +2865,15 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Overview also User Settings.',
             style: normaltext1,
+          ),
+          const SizedBox(
+            height: 10.0,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -2675,6 +2886,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
             text: const TextSpan(children: [
               TextSpan(
@@ -2687,6 +2901,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/46.png',
@@ -2698,6 +2915,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
             text: const TextSpan(children: [
               TextSpan(
@@ -2750,6 +2970,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/47.png',
@@ -2761,6 +2984,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
             text: const TextSpan(children: [
               TextSpan(
@@ -2796,6 +3022,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/48.png',
@@ -2807,6 +3036,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 470.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Now, Red Hat Enterprise Linux login page show here.',
             style: normaltext1,
@@ -2830,6 +3062,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/49.png',
@@ -2841,6 +3076,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'In the Red Hat Enterprise Linux login screen. Enter your user password.',
             style: normaltext1,
@@ -2864,6 +3102,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
               ),
             ]),
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/50.png',
@@ -2875,10 +3116,16 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Now, Red Hat Enterprise Linux logged successfully.',
             style: normaltext1,
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/51.png',
@@ -2890,11 +3137,16 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Now, you can explore Red Hat Enterprise Linux.',
             style: normaltext1,
           ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/52.png',
@@ -2906,6 +3158,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Check, Red Hat Enterprise Linux version.',
             style: normaltext1,
@@ -2924,7 +3179,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'cat /etc/os-release',
             style: commandtext1,
           ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/53.png',
@@ -2936,11 +3193,16 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Check, Red Hat Enterprise Linux version.',
             style: normaltext1,
           ),
-
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/54.png',
@@ -2952,6 +3214,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Step 5:- Enable and Disable Red Hat Subscription on RHEL',
             style: darktext2,
@@ -3005,6 +3270,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'subscription-manager register --auto-attach',
             style: commandtext1,
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/55.png',
@@ -3016,6 +3284,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Verifying Subscription',
             style: darktext4,
@@ -3030,6 +3301,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'subscription-manager list',
             style: commandtext1,
           ),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/56.png',
@@ -3041,6 +3315,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           const Text(
             'Un-registering a system',
             style: darktext4,
@@ -3055,7 +3332,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'subscription-manager remove --all',
             style: commandtext1,
           ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/57.png',
@@ -3067,7 +3344,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 70.0,
                   width: width,
                 ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(height: 10.0,),
           const Text(
             'To unregister the system from the Red Hat to run the below command.',
             style: normaltext1,
@@ -3077,7 +3354,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'subscription-manager unregister',
             style: commandtext1,
           ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/58.png',
@@ -3089,7 +3366,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 60.0,
                   width: width,
                 ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(height: 10.0,),
           const Text(
             'To remove all local data from the system from the Red Hat to run the below command.',
             style: normaltext1,
@@ -3099,7 +3376,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             'subscription-manager clean',
             style: commandtext1,
           ),
-          const SizedBox(height: 5.0,),
+          const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/59.png',
@@ -3111,8 +3388,14 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 45.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
            const Text('Check, Red Hat Enterprise Linux'
                ' details using neofetch command(Optional).',style: normaltext1,),
+          const SizedBox(
+            height: 10.0,
+          ),
           orientation == Orientation.portrait
               ? Image.asset(
                   'assets/installation/redhatinstallation/60.png',
@@ -3124,6 +3407,9 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                   height: 600.0,
                   width: width,
                 ),
+          const SizedBox(
+            height: 10.0,
+          ),
           RichText(
             text: const TextSpan(children: [
               TextSpan(

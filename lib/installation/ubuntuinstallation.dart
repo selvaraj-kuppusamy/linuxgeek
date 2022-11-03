@@ -69,6 +69,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               'Ubuntu Server Installation in Hardware',
               style: darktext1,
             ),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/ubuntuinstallation/ubuntuserver.png',
@@ -81,7 +82,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     width: width,
                   ),
             const SizedBox(
-              height: 5.0,
+              height: 10.0,
             ),
             const Text(
               'Ubuntu Linux',
@@ -207,6 +208,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                 style: normaltext1,
               ),
             ])),
+            const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
                     'assets/installation/ubuntuinstallation/0.PNG',
@@ -218,6 +220,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     height: 350.0,
                     width: width,
                   ),
+            const SizedBox(height: 10.0,),
             const Text(
               'In my case, I choose Ubuntu 22.04 LTS.',
               style: normaltext1,
@@ -332,6 +335,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
                     style: normaltext1,
                   ),
                 ])),
+              const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
               'assets/installation/ubuntuinstallation/1.1.PNG',
@@ -343,6 +347,7 @@ class _UbuntuinstallationState extends State<Ubuntuinstallation> {
               height: 345.0,
               width: width,
             ),
+            const SizedBox(height: 10.0,),
             const  Text('Ubuntu Server is booting...'),
             const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
