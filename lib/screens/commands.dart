@@ -23,7 +23,6 @@ class _CommandsState extends State<Commands> {
       'ls Command',
       'touch Command',
       'cat command',
-      'man command'
 
     ];
     List commandexplanation =[
@@ -33,7 +32,6 @@ class _CommandsState extends State<Commands> {
       'The ls command is used to display a list of content of a directory.',
       'The touch command is used to create empty files.',
       'cat command is used to concatenate files and print on the standard output.',
-      'man command is used to manage the product'
 
     ];
     List commandsyntax = [
@@ -43,7 +41,6 @@ class _CommandsState extends State<Commands> {
       'ls',
       'touch <file name>',
       'cat <file name>',
-      'man'
     ];
     List commandphoto = [
       'assets/commands/pwd.PNG',
@@ -52,7 +49,6 @@ class _CommandsState extends State<Commands> {
       'assets/commands/ls.PNG',
       'assets/commands/touch.PNG',
       'assets/commands/cat.PNG',
-      'assets/commands/man.png'
     ];
     return  SafeArea(
       child: Scaffold(
