@@ -56,7 +56,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
           children: [
             const Text(
               'CentOS Installation in Hardware',
-              style: darktext1,
+              style: darktext1, textAlign: TextAlign.justify,
             ),
             orientation == Orientation.portrait
                 ? Image.asset(
@@ -74,12 +74,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'CentOS Linux',
-              style: darktext2,
+              style: darktext2,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
               TextSpan(
                   text: 'CentOS',
@@ -103,14 +104,14 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'System requirements',
-              style: darktext2,
+              style: darktext2, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 10.0,
             ),
             const Text(
               '\u27A4\t 20GB free disk space.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
@@ -122,6 +123,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             //       color: Colors.black),
             // ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
               const TextSpan(
                 text: '\u27A4\t',
@@ -147,28 +149,28 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               '\u27A4\t CentOS ISO File.',
-              style: normaltext1,
+              style: normaltext1, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t A minimum of 4 GB RAM is recommended.',
-              style: normaltext1,
+              style: normaltext1, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t One core or thread for each virtualized CPU and one for the host.',
-              style: normaltext1,
+              style: normaltext1, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Step 1 :- Download CentOS Linux ISO',
-              style: darktext2,),
+              style: darktext2, textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
@@ -184,6 +186,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             //       color: Colors.black),
             // ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: TextSpan(children: [
               const TextSpan(
                 text: 'Proceed to\t',
@@ -210,7 +213,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             const Text('In my case, I choose CentOS Stream Linux 9.',
-                style: normaltext1,),
+                style: normaltext1,textAlign: TextAlign.justify,),
 
             const SizedBox(
               height: 10.0,
@@ -229,25 +232,25 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const Text('Step 2:- Create Bootable USB Drive on CentOS Linux',style: darktext2,),
+            const Text('Step 2:- Create Bootable USB Drive on CentOS Linux',style: darktext2,textAlign: TextAlign.justify,),
             const SizedBox(height: 5.0),
             const Text('The balenaEtcher utility launches. Plug in the USB drive –'
-                ' you should see the drive pop up in the device field.',style: normaltext1,),
+                ' you should see the drive pop up in the device field.',style: normaltext1,textAlign: TextAlign.justify,),
             const Text(
               '\u27A4\t In the Flash from file, click Disk or ISO Image.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(height: 5.0,),
             const Text(
               '\u27A4\t Browse and select the .iso CentOS Linux file you downloaded earlier.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(height: 5.0,),
             const Text(
               '\u27A4\t Select Target USB as the device you wish to write to.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(height: 5.0,),
             const Text(
               '\u27A4\t Click the Flash button to the Flash.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(height: 10.0,),
             orientation == Orientation.portrait
                 ? Image.asset(
@@ -263,12 +266,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(height: 10.0,),
             const Text(
               'Step 3:- Installing CentOS in Hardware',
-              style: darktext2,
+              style: darktext2, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Connect the',
@@ -299,11 +303,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const Text(
                 'Now, The CentOS Linux installation process will be started.'
                 ' Use the up and down key to go to Install CentOS Linux.',
-                style: normaltext1,),
+                style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Press',
@@ -339,7 +344,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const Text(
                 ' Install CentOS Linux is booted and testing the process.'
                 ' After, the window below will prompt you to select the installation language.',
-                style: normaltext1,),
+                style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
@@ -357,7 +362,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             const SizedBox(
               height: 10.0,
             ),
-            const  Text('Centos Linux are Still booting...'),
+            const  Text('Centos Linux are Still booting...',style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
@@ -376,6 +381,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text:
@@ -395,6 +401,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click ',
@@ -428,6 +435,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should setup the\t',
@@ -462,19 +470,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Localization',
-              style: darktext2,),
+              style: darktext2,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Keyboard',
-              style: darktext4,
+              style: darktext4, textAlign: TextAlign.justify,
             ),
 
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should add your preferable\t',
@@ -497,6 +506,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click \t',
@@ -555,6 +565,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose\t',
@@ -573,6 +584,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -606,6 +618,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
 
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'I selected my',
@@ -632,6 +645,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -665,11 +679,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Language Support',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, should select your preferable\t',
@@ -696,6 +711,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -730,19 +746,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Time and Date',
-              style: darktext4,
+              style: darktext4,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Choose the location as per your setup. In my case Region: Asia and City:Kolkata.',
-              style: normaltext1,
+              style: normaltext1, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -776,19 +793,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software',
-              style: darktext1,),
+              style: darktext1, textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Installation Source',
-              style: darktext4,
+              style: darktext4, textAlign: TextAlign.justify,
             ),
 
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text:
@@ -818,6 +836,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose default\t',
@@ -836,6 +855,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click',
@@ -870,17 +890,18 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Software Selection',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'The common installation types are:',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
@@ -900,6 +921,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
@@ -919,6 +941,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: '\u27A4\t',
@@ -939,6 +962,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I choose\t',
@@ -965,6 +989,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -998,19 +1023,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'System',
-              style: darktext2,),
+              style: darktext2,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Installation Destination',
-              style: darktext4,
+              style: darktext4,textAlign: TextAlign.justify,
             ),
 
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+                textAlign: TextAlign.justify,
                 text: const TextSpan(children: [
               TextSpan(
                 text: 'In the\t',
@@ -1046,6 +1072,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text:
@@ -1067,6 +1094,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1101,11 +1129,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'KDUMP',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'kdump is\t',
@@ -1128,6 +1157,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'If you will unchecked the\t',
@@ -1161,6 +1191,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In my case, I was\t',
@@ -1180,6 +1211,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1214,11 +1246,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Network and Hostname',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In the\t',
@@ -1254,6 +1287,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In my case, I choose default network.'
@@ -1266,6 +1300,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1300,11 +1335,12 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Security Profile',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Security profile',
@@ -1320,6 +1356,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In my case, I was choose\t',
@@ -1354,17 +1391,18 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'User Settings',
-              style: darktext2,),
+              style: darktext2,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Root password',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'In the root account, enter the\t',
@@ -1392,6 +1430,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Also your preference to choose\t',
@@ -1419,6 +1458,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1454,46 +1494,47 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'User Creation',
-              style: darktext4,),
+              style: darktext4,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'In the User Creation, you can set up your user account.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t Enter your name.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t Enter your user name.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t Pick your username.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               '\u27A4\t Pick your password and confirm password.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Also your preference to choose\t',
@@ -1521,6 +1562,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1555,19 +1597,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Now, this Installation Summary should ready for the Begin Installation.',
-              style: normaltext1,
+              style: normaltext1, textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Once again, Overview all things.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1601,6 +1644,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'CentOS Linux',
@@ -1630,6 +1674,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'CentOS Linux',
@@ -1645,6 +1690,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text:
@@ -1674,6 +1720,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Click\t',
@@ -1708,12 +1755,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Now, CentOS Linux login page show here.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Press\t',
@@ -1749,12 +1797,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'In the CentOS Linux login screen. Enter your user password.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Press\t',
@@ -1788,6 +1837,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Now,\t',
@@ -1821,6 +1871,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Now, you can explore\t',
@@ -1856,20 +1907,20 @@ class _CentosinstallationState extends State<Centosinstallation> {
 
             const Text(
               'Check, CentOS version.',
-              style: normaltext1,),
+              style: normaltext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'Use below command in terminal.',
-              style: normaltext1,
+              style: normaltext1,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             const Text(
               'cat /etc/os-release',
-              style: commandtext1,),
+              style: commandtext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
@@ -1889,12 +1940,13 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'Update the CentOS Linux',
-              style: darktext4,
+              style: darktext4,textAlign: TextAlign.justify,
             ),
             const SizedBox(
               height: 5.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Now, you can use below command to\t',
@@ -1923,7 +1975,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
             ),
             const Text(
               'yum update',
-              style: commandtext1,),
+              style: commandtext1,textAlign: TextAlign.justify,),
             const SizedBox(
               height: 10.0,
             ),
@@ -1942,6 +1994,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Check,\t',
@@ -1983,6 +2036,7 @@ class _CentosinstallationState extends State<Centosinstallation> {
               height: 10.0,
             ),
             RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
                 TextSpan(
                   text: 'Finally,\t',
