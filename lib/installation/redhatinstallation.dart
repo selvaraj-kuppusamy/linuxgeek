@@ -79,7 +79,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
         children: [
           const Text(
             'Red Hat Installation in VirtualBox',
-            style: darktext2,
+            style: darktext2,textAlign: TextAlign.justify,
           ),
           orientation == Orientation.portrait
               ? Image.asset(
@@ -94,12 +94,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
                 ),
           const Text(
             'Red Hat Enterprise Linux',
-            style: darktext2,
+            style: darktext2,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: TextSpan(children: [
             TextSpan(
                 text: 'Red Hat Enterprise Linux',
@@ -122,13 +123,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'System requirements',
-            style: darktext2,
+            style: darktext2,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           const Text(
-            '\u27A4\t 20GB free disk space.',
+            '\u27A4\t 20GB free disk space.',textAlign: TextAlign.justify,
             style: normaltext1,
           ),
           const SizedBox(
@@ -142,6 +143,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           //       color: Colors.black),
           // ),
           RichText(
+              textAlign: TextAlign.justify,
               text: TextSpan(children: [
             const TextSpan(
               text: '\u27A4\t',
@@ -166,7 +168,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           const Text(
-            '\u27A4\t RHEL ISO File.',
+            '\u27A4\t RHEL ISO File.',textAlign: TextAlign.justify,
             style: normaltext1,
           ),
           const SizedBox(
@@ -174,26 +176,27 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             '\u27A4\t A minimum of 4 GB RAM is recommended.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             '\u27A4\t One core or thread for each virtualized CPU and one for the host.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           const Text(
             'Step 1 :- Download Red Hat Enterprise Linux ISO',
-            style: darktext2,
+            style: darktext2, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: TextSpan(children: [
             const TextSpan(
               text: 'Proceed to\t',
@@ -233,6 +236,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: TextSpan(children: [
             const TextSpan(
               text: 'Thereafter, download the\t',
@@ -257,27 +261,28 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Choose Redhat Enterprises Linux version and download it.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const Text(
             'In my case, I choose Red Hat Enterprise Linux 9.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           const Text(
             'Step 2:- Create a Virtual Machine',
-            style: darktext2,
+            style: darktext2,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           const Text(
             'Launch VirtualBox and create a new virtual machine.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click the\t',
@@ -311,12 +316,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Name the Operating System name.choose Machine Folder, Type and Version.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -349,6 +355,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text:
@@ -369,6 +376,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Allocate the\t',
@@ -397,6 +405,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -429,6 +438,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In the next window, select\t',
@@ -447,6 +457,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -479,6 +490,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Select the\t',
@@ -497,6 +509,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -530,6 +543,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
 
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Choose\t',
@@ -548,6 +562,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -580,6 +595,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           const Text(
+            textAlign: TextAlign.justify,
             'Select File Location and Size.',
             style: normaltext1,
           ),
@@ -587,6 +603,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text:
@@ -614,6 +631,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -647,7 +665,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, new virtual machine has been successfully created.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -668,12 +686,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Step 3:- Setting Up the Virtual Machine for RHEL',
-            style: darktext2,
+            style: darktext2, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -707,12 +726,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'In the general option, choose Advanced tab.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text:
@@ -734,7 +754,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'It is used to copy and paste some content between the virtual machine and the host.',
-            style: normaltext1,
+            style: normaltext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -756,12 +776,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const Text(
             'After clicking on the storage, we will attach the Red Hat Enterprise Linux 9 '
             'ISO file to our operating system.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click on the\t',
@@ -788,6 +809,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'After click on\t',
@@ -820,6 +842,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Choose your\t',
@@ -846,6 +869,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -879,12 +903,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, Red Hat Enterprise Linux 9 image file was selected.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -918,19 +943,20 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Step 4:- Installing RHEL in VirtualBox',
-            style: darktext2,
+            style: darktext2, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Now, let’s boot up our machine and Install Red Hat Enterprise Linux.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -950,7 +976,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'The Red Hat Enterprise Linux installation process will be started.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -971,12 +997,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, use the up and down key to go to Install Red Hat Enterprise Linux.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Press\t',
@@ -1011,7 +1038,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const Text(
             'Red Hat Enterprise Linux is booted and testing the process.After, '
             'the window below will prompt you to select the installation language.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -1030,7 +1057,8 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const SizedBox(
             height: 10.0,
           ),
-          const  Text('Red Hat Enterprise Linux are Still booting...'),
+          const  Text('Red Hat Enterprise Linux are Still booting...',
+          style: normaltext1,textAlign: TextAlign.justify,),
           const SizedBox(
             height: 10.0,
           ),
@@ -1049,6 +1077,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text:
@@ -1068,6 +1097,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'And press\t',
@@ -1100,6 +1130,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Now, should setup the\t',
@@ -1133,20 +1164,21 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Localization',
-            style: darktext2,
+            style: darktext2,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Keyboard',
-            style: darktext4,
+            style: darktext4,textAlign: TextAlign.justify,
           ),
 
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Now, should add your preferable\t',
@@ -1162,6 +1194,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click \t',
@@ -1218,6 +1251,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In my case, I choose\t',
@@ -1236,6 +1270,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1268,6 +1303,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'I selected my',
@@ -1294,6 +1330,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1326,13 +1363,14 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           const Text(
-            'Language Support',
+            'Language Support', textAlign: TextAlign.justify,
             style: darktext4,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Now, should select your preferable\t',
@@ -1359,6 +1397,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1392,19 +1431,20 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Time and Date',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Choose the location as per your setup. In my case Region: Asia and City:Kolkata.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1438,20 +1478,21 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Software',
-            style: darktext2,
+            style: darktext2, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Connect to Red Hat',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
 
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'To Connect to Red Hat using authenticate with your\t',
@@ -1492,6 +1533,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ])),
           const SizedBox(height: 5.0),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1525,13 +1567,14 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Installation Source',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
 
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text:
@@ -1559,6 +1602,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ])),
           const SizedBox(height: 5.0),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In my case, I choose default\t',
@@ -1577,6 +1621,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1610,19 +1655,20 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Software Selection',
-            style: darktext4,
+            style: darktext4,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'The common installation types are:',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: '\u27A4\t',
@@ -1642,6 +1688,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: '\u27A4\t',
@@ -1661,6 +1708,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: '\u27A4\t',
@@ -1681,6 +1729,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In my case, I choose\t',
@@ -1707,6 +1756,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1740,13 +1790,14 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Installation Destination',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
 
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In the\t',
@@ -1783,12 +1834,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'To ensure the partition option and selected the hard disk.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1821,6 +1873,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'In my case, I was select\t',
@@ -1839,6 +1892,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -1871,6 +1925,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Now, In the manual partitioning screen. By default, the\t',
@@ -1889,6 +1944,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'To creating the partitions, click on the\t',
@@ -1915,11 +1971,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           const Text(
-              'In my case, disk size is 50 GB. so, I was create partitions based on my disk size.'),
+              'In my case, disk size is 50 GB. so, I was create '
+                  'partitions based on my disk size.',style: normaltext1,textAlign: TextAlign.justify,),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: '/boot -	1024MB\n',
@@ -1939,7 +1997,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'You will create partitions based on your purposes and disk size.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -1960,12 +2018,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Boot partition',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'click on the\t',
@@ -2000,6 +2059,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -2032,6 +2092,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'From the partition table below, you can see that the\t',
@@ -2073,12 +2134,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Root partition',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'click on the\t',
@@ -2113,6 +2175,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -2145,6 +2208,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'From the partition table below, you can see that the\t',
@@ -2186,12 +2250,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Swap partition',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'click on the\t',
@@ -2226,6 +2291,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -2258,6 +2324,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'From the partition table below, you can see that the\t',
@@ -2284,6 +2351,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Now,\t',
@@ -2302,6 +2370,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -2334,6 +2403,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Overview the\t',
@@ -2352,6 +2422,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+              textAlign: TextAlign.justify,
               text: const TextSpan(children: [
             TextSpan(
               text: 'Click\t',
@@ -2385,12 +2456,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'KDUMP',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'kdump is\t',
@@ -2413,6 +2485,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'If you will unchecked the\t',
@@ -2432,6 +2505,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I was choose\t',
@@ -2450,6 +2524,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -2484,12 +2559,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Network and Hostname',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'In the\t',
@@ -2512,12 +2588,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const Text(
             'In my case, I choose default network. If you can change network connection, '
             'you can configure it.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -2552,12 +2629,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Security Profile',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Security profile',
@@ -2573,6 +2651,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'In my case, I was choose\t',
@@ -2607,12 +2686,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Root password',
-            style: darktext4,
+            style: darktext4,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'In the root account, enter the\t',
@@ -2640,6 +2720,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Also your preference to choose\t',
@@ -2667,6 +2748,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -2701,47 +2783,48 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'User Creation',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'In the User Creation, you can set up your user account.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             '\u27A4\t Enter your name.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             '\u27A4\t Enter your user name.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             '\u27A4\t Pick your username.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             '\u27A4\t Pick your password and confirm password.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Also your preference to choose\t',
@@ -2769,6 +2852,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -2802,6 +2886,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, this\t',
@@ -2830,12 +2915,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Once again, overview all things.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click\t',
@@ -2870,7 +2956,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Overview also User Settings.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -2890,6 +2976,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Red Hat Enterprise Linux',
@@ -2919,6 +3006,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Red Hat Enterprise Linux',
@@ -2934,6 +3022,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text:
@@ -2955,6 +3044,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Click',
@@ -2988,6 +3078,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Now, Red Hat Enterprise Linux\t',
@@ -3007,6 +3098,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: ' Click\t',
@@ -3041,12 +3133,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, Red Hat Enterprise Linux login page show here.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Press\t',
@@ -3081,12 +3174,13 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'In the Red Hat Enterprise Linux login screen. Enter your user password.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Press\t',
@@ -3121,7 +3215,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, Red Hat Enterprise Linux logged successfully.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3142,7 +3236,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Now, you can explore Red Hat Enterprise Linux.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3163,21 +3257,21 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Check, Red Hat Enterprise Linux version.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Use below command in terminal.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'cat /etc/os-release',
-            style: commandtext1,
+            style: commandtext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3198,7 +3292,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Check, Red Hat Enterprise Linux version.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3219,26 +3313,27 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Step 5:- Enable and Disable Red Hat Subscription on RHEL',
-            style: darktext2,
+            style: darktext2, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Prerequisites',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'Register and Enable Red Hat subscription',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text:
@@ -3261,14 +3356,14 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const Text(
             'Open terminal and enter the below command. '
             'to register and enable RedHat Subscription.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 5.0,
           ),
           const Text(
             'subscription-manager register --auto-attach',
-            style: commandtext1,
+            style: commandtext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3289,17 +3384,17 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Verifying Subscription',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'List of attached subscription can be verified by running the below command.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'subscription-manager list',
-            style: commandtext1,
+            style: commandtext1,textAlign: TextAlign.justify,
           ),
           const SizedBox(
             height: 10.0,
@@ -3320,17 +3415,17 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           ),
           const Text(
             'Un-registering a system',
-            style: darktext4,
+            style: darktext4, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'Remove all subscriptions from Red Hat to run the below command.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'subscription-manager remove --all',
-            style: commandtext1,
+            style: commandtext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
@@ -3347,12 +3442,12 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const SizedBox(height: 10.0,),
           const Text(
             'To unregister the system from the Red Hat to run the below command.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'subscription-manager unregister',
-            style: commandtext1,
+            style: commandtext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
@@ -3369,12 +3464,12 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
           const SizedBox(height: 10.0,),
           const Text(
             'To remove all local data from the system from the Red Hat to run the below command.',
-            style: normaltext1,
+            style: normaltext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 5.0,),
           const Text(
             'subscription-manager clean',
-            style: commandtext1,
+            style: commandtext1, textAlign: TextAlign.justify,
           ),
           const SizedBox(height: 10.0,),
           orientation == Orientation.portrait
@@ -3392,7 +3487,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
            const Text('Check, Red Hat Enterprise Linux'
-               ' details using neofetch command(Optional).',style: normaltext1,),
+               ' details using neofetch command(Optional).',style: normaltext1,textAlign: TextAlign.justify,),
           const SizedBox(
             height: 10.0,
           ),
@@ -3411,6 +3506,7 @@ class _RedhatinstallationState extends State<Redhatinstallation> {
             height: 10.0,
           ),
           RichText(
+            textAlign: TextAlign.justify,
             text: const TextSpan(children: [
               TextSpan(
                 text: 'Finally,\t',
