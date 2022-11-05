@@ -44,6 +44,9 @@ class _CommandsState extends State<Commands> {
       'df Command',
       'exit Command',
       'clear Command',
+      'ip Command',
+      'ping Command',
+      'host Command',
 
 
     ];
@@ -76,6 +79,9 @@ class _CommandsState extends State<Commands> {
       'The df command is used to display the disk space used in the file system. It displays the output as in the number of used blocks, available blocks, and the mounted directory.',
       'Linux exit command is used to exit from the current shell. It takes a parameter as a number and exits the shell with a return of status number.',
       'Linux clear command is used to clear the terminal screen.',
+      'Linux ip command is an updated version of the ipconfig command. It is used to assign an IP address, initialize an interface, disable an interface.',
+      'The ping command is used to check the connectivity between two nodes, that is whether the server is connected. It is a short form of "Packet Internet Groper."',
+      'The host command is used to display the IP address for a given domain name and vice versa. It performs the DNS lookups for the DNS Query.',
     ];
     List commandsyntax = [
       'pwd',
@@ -104,7 +110,10 @@ class _CommandsState extends State<Commands> {
       'sleep <time>',
       'df',
       'exit',
-      'clear'
+      'clear',
+      'ip a or ip addr',
+      'ping <destination>',
+      'host <domain name> or <ip address>',
 
     ];
     List commandphoto = [
@@ -135,7 +144,9 @@ class _CommandsState extends State<Commands> {
       'assets/commands/df.PNG',
       'assets/commands/exit.PNG',
       'assets/commands/clear.PNG',
-
+      'assets/commands/ip.PNG',
+      'assets/commands/ping.PNG',
+      'assets/commands/host.PNG',
 
     ];
     return  SafeArea(
