@@ -12,9 +12,9 @@ class _CommandsState extends State<Commands> {
   Widget build(BuildContext context) {
     var orientation = MediaQuery.of(context).orientation;
     //size of the window
-    var size = MediaQuery.of(context).size;
-     var height = size.height;
-    var width = size.width;
+    // var size = MediaQuery.of(context).size;
+    //  var height = size.height;
+    // var width = size.width;
 
     List comandname =[
       'Pwd commnand',
@@ -37,6 +37,12 @@ class _CommandsState extends State<Commands> {
       'id Command',
       'useradd Command',
       'passwd Command',
+      'groupadd Command',
+      'grep Command',
+      'sed command',
+      'sleep Command',
+      'df Command',
+      'exit Command',
 
 
     ];
@@ -62,7 +68,12 @@ class _CommandsState extends State<Commands> {
       'The id command is used to display the user ID (UID) and group ID (GID).',
       'The useradd command is used to add or remove a user on a Linux server.',
       'The passwd command is used to create and change the password for a user.',
-
+      'The groupadd command is used to create a user group.',
+      'The grep is the most powerful and used filter in a Linux system. The \'grep\' stands for "global regular expression print." It is useful for searching the content from a file. Generally, it is used with the pipe.',
+      'The sed command is also known as stream editor. It is used to edit files using a regular expression. It does not permanently edit files; instead, the edited content remains only on display. It does not affect the actual file.',
+      'The sleep command is used to hold the terminal by the specified amount of time. By default, it takes time in seconds.',
+      'The df command is used to display the disk space used in the file system. It displays the output as in the number of used blocks, available blocks, and the mounted directory.',
+      'Linux exit command is used to exit from the current shell. It takes a parameter as a number and exits the shell with a return of status number.',
     ];
     List commandsyntax = [
       'pwd',
@@ -85,6 +96,13 @@ class _CommandsState extends State<Commands> {
       'id',
       'useradd  username',
       'passwd <username>',
+      'groupadd <group name>',
+      'command | grep <searchWord>',
+      'command | sed \'s/<oldWord>/<newWord>/\'',
+      'sleep <time>',
+      'df',
+      'exit',
+
     ];
     List commandphoto = [
       'assets/commands/pwd.PNG',
@@ -106,7 +124,16 @@ class _CommandsState extends State<Commands> {
       'assets/commands/root.PNG',
       'assets/commands/id.PNG',
       'assets/commands/useradd.PNG',
-      'assets/commands/useradd.PNG'
+      'assets/commands/passwd.PNG',
+      'assets/commands/groupadd.PNG',
+      'assets/commands/grep.PNG',
+      'assets/commands/sed.PNG',
+      'assets/commands/sleep.PNG',
+      'assets/commands/df.PNG',
+      'assets/commands/exit.PNG',
+
+
+
 
 
 
