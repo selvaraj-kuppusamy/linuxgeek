@@ -71,7 +71,7 @@ class _GentooState extends State<Gentoo> {
                     text: '\tis a Linux distribution built using the Portage package management system. '
                         'Unlike a binary software distribution, the source code is compiled locally '
                         'according to the user\'s '
-                        'preferences and is often optimized for the specific type of computer',
+                        'preferences and is often optimized for the specific type of computer.',
                     style: normaltext1,
                   ),
                 ])),

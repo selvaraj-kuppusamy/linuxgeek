@@ -71,7 +71,7 @@ class _BunsenlabsState extends State<Bunsenlabs> {
                     text: '\tis a Linux distribution offering a light-weight and '
                         'easily customizable Openbox desktop. '
                         'The BunsenLabs distribution is based on Debian\'s Stable branch'
-                        ' and is a community continuation of the CrunchBang Linux distribution',
+                        ' and is a community continuation of the CrunchBang Linux distribution.',
                     style: normaltext1,
                   ),
                 ])),
