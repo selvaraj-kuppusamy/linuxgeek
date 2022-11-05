@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:linuxgeek/screens/home.dart';
 import 'package:linuxgeek/splashscreen/splashscreen.dart';
 
 void main() {
