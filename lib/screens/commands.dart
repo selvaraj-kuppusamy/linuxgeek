@@ -43,6 +43,7 @@ class _CommandsState extends State<Commands> {
       'sleep Command',
       'df Command',
       'exit Command',
+      'clear Command',
 
 
     ];
@@ -74,6 +75,7 @@ class _CommandsState extends State<Commands> {
       'The sleep command is used to hold the terminal by the specified amount of time. By default, it takes time in seconds.',
       'The df command is used to display the disk space used in the file system. It displays the output as in the number of used blocks, available blocks, and the mounted directory.',
       'Linux exit command is used to exit from the current shell. It takes a parameter as a number and exits the shell with a return of status number.',
+      'Linux clear command is used to clear the terminal screen.',
     ];
     List commandsyntax = [
       'pwd',
@@ -102,6 +104,7 @@ class _CommandsState extends State<Commands> {
       'sleep <time>',
       'df',
       'exit',
+      'clear'
 
     ];
     List commandphoto = [
@@ -131,11 +134,7 @@ class _CommandsState extends State<Commands> {
       'assets/commands/sleep.PNG',
       'assets/commands/df.PNG',
       'assets/commands/exit.PNG',
-
-
-
-
-
+      'assets/commands/clear.PNG',
 
 
     ];
