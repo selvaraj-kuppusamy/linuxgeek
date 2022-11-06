@@ -25,9 +25,14 @@ class _AboutState extends State<About> {
           padding: const EdgeInsets.all(15.0),
           children: const [
                 Text('Linuxgeek is Linux learning application.',style: normaltext1,),
-                Text('Buy Coffee for me',style: darktext3,),
-                Text('velmanikpvs@oksbi',style: darktext3,)
-
+                SizedBox(height: 3.0,),
+                Text('Contact for any queries:',style: darktext3,),
+                 SizedBox(height: 3.0,),
+                Text('Email : selvarajkuppusamymsc2019@gmail.com',style: darktext3,),
+                SizedBox(height: 3.0,),
+                Text('Buy Coffee for me:',style: darktext3,),
+                SizedBox(height: 3.0,),
+                Text('velmanikpvs@oksbi',style: darktext3,),
           ],
         )
       ),
